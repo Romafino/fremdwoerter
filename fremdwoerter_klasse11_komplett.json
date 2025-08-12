@@ -1,0 +1,2402 @@
+[
+  {
+    "Fremdwort": "Allegorie",
+    "Erläuterung": "Bildhafte Darstellung eines abstrakten Begriffs",
+    "Beispielsatz": "Die Figur mit Waage steht als Allegorie für Gerechtigkeit.",
+    "Synonyme": "Sinnbild, Metapher",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Alliteration",
+    "Erläuterung": "Gleicher Anfangslaut bei benachbarten Wörtern",
+    "Beispielsatz": "„Milch macht müde Männer munter“ bleibt im Kopf durch Alliteration.",
+    "Synonyme": "Stabreim, Lautwiederholung",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Anapher",
+    "Erläuterung": "Wiederholung am Satzanfang",
+    "Beispielsatz": "„Ich will Freiheit. Ich will Frieden.“ nutzt die Anapher zur Betonung.",
+    "Synonyme": "Wortwiederholung, Wiederholung",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Antagonist",
+    "Erläuterung": "Gegenspieler der Hauptfigur",
+    "Beispielsatz": "Voldemort ist der Antagonist von Harry Potter.",
+    "Synonyme": "Gegenspieler, Rivale",
+    "Antonyme": "Protagonist",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Aphorismus",
+    "Erläuterung": "Kurzer, prägnanter Sinnspruch",
+    "Beispielsatz": "‚Der Weg ist das Ziel‘ ist ein bekannter Aphorismus.",
+    "Synonyme": "Sinnspruch, Merksatz",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Archaismus",
+    "Erläuterung": "Veralteter sprachlicher Ausdruck",
+    "Beispielsatz": "„Minne“ für Liebe ist heute ein Archaismus.",
+    "Synonyme": "veraltetes Wort, Altertümlichkeit",
+    "Antonyme": "Neologismus",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Assonanz",
+    "Erläuterung": "Gleichklang von Vokalen",
+    "Beispielsatz": "„geben“ und „nehmen“ bilden eine Assonanz.",
+    "Synonyme": "Vokalreim, Klangähnlichkeit",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Chiffre",
+    "Erläuterung": "Verschlüsseltes Zeichen/Wort mit besonderer Bedeutung",
+    "Beispielsatz": "Der Autor verwendet eine Chiffre, die nur Eingeweihte verstehen.",
+    "Synonyme": "Code, Geheimzeichen",
+    "Antonyme": "Offenlegung",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Diminutiv",
+    "Erläuterung": "Verkleinerungsform eines Wortes",
+    "Beispielsatz": "„Häuschen“ ist ein Diminutiv von „Haus“.",
+    "Synonyme": "Verkleinerungsform, -chen/-lein",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Ellipse",
+    "Erläuterung": "Auslassung von Wörtern im Satz",
+    "Beispielsatz": "„Je schneller, desto besser“ enthält eine Ellipse.",
+    "Synonyme": "Auslassung, Verkürzung",
+    "Antonyme": "Vollsatz",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Epik",
+    "Erläuterung": "Erzählende Literaturgattung",
+    "Beispielsatz": "Romane und Novellen gehören zur Epik.",
+    "Synonyme": "Erzählkunst, Prosa",
+    "Antonyme": "Lyrik",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Epipher",
+    "Erläuterung": "Wiederholung am Satzende",
+    "Beispielsatz": "„Er will alles, kann alles, schafft alles“ nutzt die Epipher.",
+    "Synonyme": "Wiederholung, Nachklang",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Euphemismus",
+    "Erläuterung": "Beschönigende Umschreibung",
+    "Beispielsatz": "Statt „er ist gestorben“ sagt man „er ist eingeschlafen“.",
+    "Synonyme": "Beschönigung, Verharmlosung",
+    "Antonyme": "Dysphemismus",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Fabel",
+    "Erläuterung": "Erzählung mit Tieren als Handelnde",
+    "Beispielsatz": "In Fabeln sprechen Tiere wie Menschen.",
+    "Synonyme": "Tiergeschichte, Lehrstück",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Hyperbel",
+    "Erläuterung": "Starke Übertreibung",
+    "Beispielsatz": "„Ich hab dir das tausendmal gesagt“ ist eine Hyperbel.",
+    "Synonyme": "Übertreibung, Steigerung",
+    "Antonyme": "Untertreibung",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Ironie",
+    "Erläuterung": "Gesagtes meint das Gegenteil",
+    "Beispielsatz": "Nach dem Patzer sagt sie ironisch: „Sehr elegant!“.",
+    "Synonyme": "Spott, feine Satire",
+    "Antonyme": "Ernst",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Lyrik",
+    "Erläuterung": "Dichtung in Versen",
+    "Beispielsatz": "Gedichte gehören zur Lyrik.",
+    "Synonyme": "Poesie, Verskunst",
+    "Antonyme": "Prosa",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Metapher",
+    "Erläuterung": "Übertragener, bildhafter Ausdruck",
+    "Beispielsatz": "„Fels in der Brandung“ nennt einen sehr verlässlichen Menschen.",
+    "Synonyme": "Bild, Gleichnis",
+    "Antonyme": "wörtliche Bedeutung",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Metonymie",
+    "Erläuterung": "Ersetzung durch nahe stehenden Begriff",
+    "Beispielsatz": "„Das Weiße Haus“ steht metonymisch für die US-Regierung.",
+    "Synonyme": "Bedeutungsverschiebung, Namensübertrag",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Neologismus",
+    "Erläuterung": "Wortneuschöpfung",
+    "Beispielsatz": "„Handy“ war einst ein Neologismus.",
+    "Synonyme": "Wortneubildung, Neubildung",
+    "Antonyme": "Archaismus",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Onomatopoesie",
+    "Erläuterung": "Lautmalerei",
+    "Beispielsatz": "„Kuckuck“ ahmt den Ruf nach – Onomatopoesie.",
+    "Synonyme": "Lautmalerei, Klangwort",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Oxymoron",
+    "Erläuterung": "Verbindung von Widersprüchen",
+    "Beispielsatz": "„Bittere Süße“ ist ein Oxymoron.",
+    "Synonyme": "Widerspruchsfigur, Gegenpaar",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Paradoxon",
+    "Erläuterung": "Scheinbarer Widerspruch mit Sinn",
+    "Beispielsatz": "„Weniger ist mehr“ wirkt als Paradoxon einprägsam.",
+    "Synonyme": "Scheinwiderspruch, Gegensatzformel",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Parallelismus",
+    "Erläuterung": "Gleicher Satzbau bei mehreren Sätzen",
+    "Beispielsatz": "„Schnell lief er hin, langsam kam er zurück“ zeigt Parallelismus.",
+    "Synonyme": "Satzbaugleichheit, Strukturwiederholung",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Parodie",
+    "Erläuterung": "Übertriebene, komische Nachahmung",
+    "Beispielsatz": "Die Parodie des Films brachte das Publikum zum Lachen.",
+    "Synonyme": "Nachahmung, Persiflage",
+    "Antonyme": "Original",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Personifikation",
+    "Erläuterung": "Vermenschlichung von Dingen/Begriffen",
+    "Beispielsatz": "„Die Sonne lacht“ ist eine Personifikation.",
+    "Synonyme": "Vermenschlichung, Belebung",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Pleonasmus",
+    "Erläuterung": "Überflüssige Doppelung der Bedeutung",
+    "Beispielsatz": "„Weißer Schimmel“ ist ein Pleonasmus.",
+    "Synonyme": "Dopplung, Tautologie",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Protagonist",
+    "Erläuterung": "Hauptfigur einer Geschichte",
+    "Beispielsatz": "Katniss ist die Protagonistin in „Tribute von Panem“.",
+    "Synonyme": "Hauptfigur, Held",
+    "Antonyme": "Antagonist",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Reim",
+    "Erläuterung": "Gleichklang der Endsilben",
+    "Beispielsatz": "„Haus“ reimt sich auf „Maus“.",
+    "Synonyme": "Endreim, Klanggleichheit",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Rhetorik",
+    "Erläuterung": "Kunst der wirkungsvollen Rede",
+    "Beispielsatz": "Gute Rhetorik hilft beim Überzeugen.",
+    "Synonyme": "Redekunst, Überzeugungslehre",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Roman",
+    "Erläuterung": "Langer Prosatext mit Handlung und Figuren",
+    "Beispielsatz": "„Der Medicus“ ist ein historischer Roman.",
+    "Synonyme": "Erzählung, Prosaepik",
+    "Antonyme": "Kurzgeschichte",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Sarkasmus",
+    "Erläuterung": "Beißender, spöttischer Kommentar",
+    "Beispielsatz": "„Ganz toll gemacht…“ sagt er sarkastisch.",
+    "Synonyme": "Hohn, Spott",
+    "Antonyme": "Ernst",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Satire",
+    "Erläuterung": "Kritik durch Humor und Übertreibung",
+    "Beispielsatz": "Die Sendung übt Satire an politischen Missständen.",
+    "Synonyme": "Spott, Gesellschaftskritik",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Sonett",
+    "Erläuterung": "Gedichtform mit 14 Versen",
+    "Beispielsatz": "Shakespeare schrieb viele Sonette.",
+    "Synonyme": "Gedichtform, Vierzeilerform",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Strophe",
+    "Erläuterung": "Abschnitt eines Gedichts",
+    "Beispielsatz": "Das Gedicht hat vier Strophen.",
+    "Synonyme": "Versabschnitt, Abschnitt",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Symbol",
+    "Erläuterung": "Zeichen mit übertragener Bedeutung",
+    "Beispielsatz": "Die Taube ist ein Symbol des Friedens.",
+    "Synonyme": "Sinnbild, Zeichen",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Synonym",
+    "Erläuterung": "Wort mit ähnlicher Bedeutung",
+    "Beispielsatz": "„Auto“ und „PKW“ sind Synonyme.",
+    "Synonyme": "gleichbedeutendes Wort, Ersatzwort",
+    "Antonyme": "Antonym",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Tragödie",
+    "Erläuterung": "Drama mit ernstem Ausgang",
+    "Beispielsatz": "„Romeo und Julia“ endet als Tragödie.",
+    "Synonyme": "Trauerspiel, Ernstdrama",
+    "Antonyme": "Komödie",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Vergleich",
+    "Erläuterung": "Gleichsetzung mit „wie/als“ zur Verdeutlichung",
+    "Beispielsatz": "„Stark wie ein Löwe“ ist ein Vergleich.",
+    "Synonyme": "Analogie, Gleichsetzung",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Zitat",
+    "Erläuterung": "Wörtlich übernommene Aussage",
+    "Beispielsatz": "Er begann den Vortrag mit einem Zitat von Goethe.",
+    "Synonyme": "Ausspruch, Belegstelle",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Versmaß",
+    "Erläuterung": "Rhythmisches Muster in Gedichten",
+    "Beispielsatz": "Das Versmaß macht ein Gedicht gut lesbar.",
+    "Synonyme": "Metrum, Rhythmus",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Kadenz",
+    "Erläuterung": "Betonung am Versende",
+    "Beispielsatz": "Die Kadenz beeinflusst den Klang eines Gedichts.",
+    "Synonyme": "Versschluss, Endbetonung",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Anspielung",
+    "Erläuterung": "Indirekter Hinweis auf Bekanntes",
+    "Beispielsatz": "Die Rede enthielt eine Anspielung auf die Antike.",
+    "Synonyme": "Allusion, Hinweis",
+    "Antonyme": "Offenlegung",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Leitmotiv",
+    "Erläuterung": "Wiederkehrendes Thema in Werk/Musik",
+    "Beispielsatz": "Das Leitmotiv zieht sich durch den ganzen Roman.",
+    "Synonyme": "Grundmotiv, Hauptthema",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Dramatik",
+    "Erläuterung": "Literaturgattung für Bühnentexte",
+    "Beispielsatz": "Komödie und Tragödie gehören zur Dramatik.",
+    "Synonyme": "Bühnenkunst, Theaterdichtung",
+    "Antonyme": "Epik",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Katharsis",
+    "Erläuterung": "Seelische Reinigung durch Mitgefühl und Furcht",
+    "Beispielsatz": "Die Tragödie zielt auf Katharsis beim Publikum.",
+    "Synonyme": "Reinigung, Läuterung",
+    "Antonyme": "–",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Exposition",
+    "Erläuterung": "Einführung in Handlung und Figuren",
+    "Beispielsatz": "Die Exposition stellt Ort und Hauptfiguren vor.",
+    "Synonyme": "Einleitung, Einführung",
+    "Antonyme": "Schluss",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Klimax",
+    "Erläuterung": "Stufenweise Steigerung",
+    "Beispielsatz": "„Er kam, sah und siegte“ bildet eine Klimax.",
+    "Synonyme": "Steigerung, Spannungsaufbau",
+    "Antonyme": "Antiklimax",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Antiklimax",
+    "Erläuterung": "Stufenweise Abschwächung",
+    "Beispielsatz": "Nach großem Lärm folgte die Antiklimax: Stille.",
+    "Synonyme": "Abschwächung, Abfall",
+    "Antonyme": "Klimax",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Ellipse (Rede)",
+    "Erläuterung": "Auslassung leicht Erkennbaren in Sätzen",
+    "Beispielsatz": "„Keine Zeit!“ ist eine elliptische Aussage.",
+    "Synonyme": "Auslassung, Kürzung",
+    "Antonyme": "Vollsatz",
+    "Thema": "Sprache & Literatur"
+  },
+  {
+    "Fremdwort": "Demokratie",
+    "Erläuterung": "Staatsform mit Mitbestimmung der Bürger",
+    "Beispielsatz": "In der Demokratie wählen Bürger frei ihre Vertreter.",
+    "Synonyme": "Volksregierung, Selbstbestimmung",
+    "Antonyme": "Diktatur, Autokratie",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Diktatur",
+    "Erläuterung": "Herrschaft ohne freie Wahlen und Rechte",
+    "Beispielsatz": "In der Diktatur ist Kritik an der Regierung gefährlich.",
+    "Synonyme": "Zwangsherrschaft, Tyrannei",
+    "Antonyme": "Demokratie",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Autokratie",
+    "Erläuterung": "Macht bei einer Person/kleinen Gruppe",
+    "Beispielsatz": "Die Autokratie beschränkt politische Freiheiten stark.",
+    "Synonyme": "Alleinherrschaft, Autoritarismus",
+    "Antonyme": "Demokratie",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Monarchie",
+    "Erläuterung": "Herrschaft eines Königs/einer Königin",
+    "Beispielsatz": "Eine konstitutionelle Monarchie teilt Macht mit dem Parlament.",
+    "Synonyme": "Königsherrschaft, Erbkönigtum",
+    "Antonyme": "Republik",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Republik",
+    "Erläuterung": "Staatsform mit gewähltem Staatsoberhaupt",
+    "Beispielsatz": "Deutschland ist eine parlamentarische Republik.",
+    "Synonyme": "Volksstaat, Gemeinwesen",
+    "Antonyme": "Monarchie",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Föderalismus",
+    "Erläuterung": "Aufteilung von Macht auf Gliedstaaten",
+    "Beispielsatz": "Im Föderalismus haben Bundesländer eigene Zuständigkeiten.",
+    "Synonyme": "Bundesstaatlichkeit, Dezentralisierung",
+    "Antonyme": "Zentralismus",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Zentralismus",
+    "Erläuterung": "Starke Macht in der Zentrale",
+    "Beispielsatz": "Zentralismus bündelt Entscheidungen in der Hauptstadt.",
+    "Synonyme": "Einheitsstaat, Konzentration",
+    "Antonyme": "Föderalismus",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Totalitarismus",
+    "Erläuterung": "Totaler Anspruch des Staates auf Kontrolle",
+    "Beispielsatz": "Totalitarismus unterdrückt Opposition und freie Medien.",
+    "Synonyme": "Allherrschaft, Unterdrückungsstaat",
+    "Antonyme": "Demokratie",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Theokratie",
+    "Erläuterung": "Herrschaft religiöser Autoritäten",
+    "Beispielsatz": "In der Theokratie bestimmen religiöse Regeln die Politik.",
+    "Synonyme": "Gottesstaat, Klerikalherrschaft",
+    "Antonyme": "Säkularstaat",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Oligarchie",
+    "Erläuterung": "Herrschaft weniger Mächtiger",
+    "Beispielsatz": "In der Oligarchie entscheiden nur wenige über viele.",
+    "Synonyme": "Herrschaft der Wenigen, Elitenherrschaft",
+    "Antonyme": "Demokratie",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Anarchie",
+    "Erläuterung": "Zustand ohne staatliche Ordnung",
+    "Beispielsatz": "Nach dem Putsch herrschte Anarchie auf den Straßen.",
+    "Synonyme": "Gesetzlosigkeit, Ordnungslosigkeit",
+    "Antonyme": "Rechtsstaat, Ordnung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Bürokratie",
+    "Erläuterung": "Verwaltungsapparat mit festen Regeln",
+    "Beispielsatz": "Formulare und Fristen gehören zur Bürokratie.",
+    "Synonyme": "Verwaltung, Amtswesen",
+    "Antonyme": "–",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Pluralismus",
+    "Erläuterung": "Vielfalt von Meinungen und Lebensformen",
+    "Beispielsatz": "Pluralismus ermöglicht friedliches Nebeneinander verschiedener Gruppen.",
+    "Synonyme": "Vielfalt, Meinungsvielfalt",
+    "Antonyme": "Monismus, Einseitigkeit",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Populismus",
+    "Erläuterung": "Vereinfachende Politik mit starken Parolen",
+    "Beispielsatz": "Populismus verspricht schnelle Lösungen für komplexe Probleme.",
+    "Synonyme": "Volksnähe (kritisch), Stimmungsmache",
+    "Antonyme": "Sachpolitik, Differenzierung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Propaganda",
+    "Erläuterung": "Systematische Beeinflussung der Öffentlichkeit",
+    "Beispielsatz": "Kriegsparteien setzen oft Propaganda ein.",
+    "Synonyme": "Meinungsmache, Agitation",
+    "Antonyme": "Aufklärung, Information",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Zensur",
+    "Erläuterung": "Staatliche Kontrolle von Inhalten",
+    "Beispielsatz": "Die Zensur sperrt kritische Webseiten.",
+    "Synonyme": "Informationskontrolle, Unterdrückung",
+    "Antonyme": "Pressefreiheit",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Asyl",
+    "Erläuterung": "Schutz vor politischer Verfolgung in anderem Staat",
+    "Beispielsatz": "Geflüchtete können in Europa Asyl beantragen.",
+    "Synonyme": "Zuflucht, Schutz",
+    "Antonyme": "Ausweisung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Integration",
+    "Erläuterung": "Eingliederung in eine Gesellschaft",
+    "Beispielsatz": "Sprachkurse fördern die Integration von Zuwanderern.",
+    "Synonyme": "Eingliederung, Teilhabe",
+    "Antonyme": "Ausgrenzung, Segregation",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Migration",
+    "Erläuterung": "Dauerhafte Wanderung in ein anderes Land",
+    "Beispielsatz": "Arbeit ist ein häufiger Grund für Migration.",
+    "Synonyme": "Einwanderung, Auswanderung",
+    "Antonyme": "Sesshaftigkeit",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Emigration",
+    "Erläuterung": "Auswanderung aus dem Heimatland",
+    "Beispielsatz": "Wirtschaftskrisen verstärken die Emigration.",
+    "Synonyme": "Auswanderung, Abwanderung",
+    "Antonyme": "Immigration",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Immigration",
+    "Erläuterung": "Einwanderung in ein Land",
+    "Beispielsatz": "Immigration bringt neue Sprachen und Kulturen.",
+    "Synonyme": "Einwanderung, Zuzug",
+    "Antonyme": "Emigration",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Multikulturalität",
+    "Erläuterung": "Zusammenleben verschiedener Kulturen",
+    "Beispielsatz": "Die Stadt profitiert von Multikulturalität.",
+    "Synonyme": "kulturelle Vielfalt, Diversität",
+    "Antonyme": "Monokultur",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Nationalismus",
+    "Erläuterung": "Übersteigerte Betonung der Nation",
+    "Beispielsatz": "Nationalismus kann Spannungen zwischen Staaten erhöhen.",
+    "Synonyme": "Chauvinismus, Vaterlandskult",
+    "Antonyme": "Kosmopolitismus, Internationalismus",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Patriotismus",
+    "Erläuterung": "Verbundenheit mit dem eigenen Land",
+    "Beispielsatz": "Am Feiertag zeigen viele Patriotismus mit Fahnen.",
+    "Synonyme": "Vaterlandsliebe, Heimatliebe",
+    "Antonyme": "Landesverachtung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Rassismus",
+    "Erläuterung": "Abwertung wegen Herkunft/Hautfarbe",
+    "Beispielsatz": "Rassismus verletzt Menschenwürde und Gleichheit.",
+    "Synonyme": "Fremdenfeindlichkeit, Diskriminierung",
+    "Antonyme": "Toleranz, Gleichberechtigung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Menschenrechte",
+    "Erläuterung": "Universelle Grundrechte für alle",
+    "Beispielsatz": "Meinungsfreiheit zählt zu den Menschenrechten.",
+    "Synonyme": "Grundrechte, Freiheitsrechte",
+    "Antonyme": "–",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Gleichberechtigung",
+    "Erläuterung": "Gleiche Rechte für alle",
+    "Beispielsatz": "Gleichberechtigung fordert gleiche Chancen für Frauen und Männer.",
+    "Synonyme": "Chancengleichheit, Gleichstellung",
+    "Antonyme": "Diskriminierung, Benachteiligung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Rechtsstaat",
+    "Erläuterung": "Staat an Recht und Gesetz gebunden",
+    "Beispielsatz": "Im Rechtsstaat gilt das Gesetz für alle gleichermaßen.",
+    "Synonyme": "Gesetzesstaat, Justizstaat",
+    "Antonyme": "Willkürstaat",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Verfassung",
+    "Erläuterung": "Grundordnung eines Staates",
+    "Beispielsatz": "Die Verfassung schützt Freiheit und Demokratie.",
+    "Synonyme": "Grundgesetz, Staatsgrundgesetz",
+    "Antonyme": "–",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Opposition",
+    "Erläuterung": "Parlamentarische Gegenkraft zur Regierung",
+    "Beispielsatz": "Die Opposition kontrolliert die Regierung im Parlament.",
+    "Synonyme": "Gegenseite, Gegenpartei",
+    "Antonyme": "Regierung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Lobbyismus",
+    "Erläuterung": "Einflussnahme von Interessengruppen",
+    "Beispielsatz": "Verbände betreiben Lobbyismus für ihre Anliegen.",
+    "Synonyme": "Interessenvertretung, Einflussnahme",
+    "Antonyme": "Transparenz, Unabhängigkeit",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Plebiszit",
+    "Erläuterung": "Direkte Volksabstimmung",
+    "Beispielsatz": "Ein Plebiszit entscheidet über wichtige Fragen.",
+    "Synonyme": "Referendum, Volksentscheid",
+    "Antonyme": "Parlamentsbeschluss",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Koalition",
+    "Erläuterung": "Zusammenschluss von Parteien zur Regierungsbildung",
+    "Beispielsatz": "Zwei Parteien bildeten eine Koalition.",
+    "Synonyme": "Bündnis, Allianz",
+    "Antonyme": "Opposition, Trennung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Mandat",
+    "Erläuterung": "Politischer Auftrag/Parlamentssitz",
+    "Beispielsatz": "Er erhielt ein direktes Mandat im Wahlkreis.",
+    "Synonyme": "Auftrag, Sitz",
+    "Antonyme": "–",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Fraktion",
+    "Erläuterung": "Zusammenschluss von Abgeordneten",
+    "Beispielsatz": "Die Fraktion stimmte geschlossen ab.",
+    "Synonyme": "Parlamentsgruppe, Partei-Flügel",
+    "Antonyme": "–",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Subsidiarität",
+    "Erläuterung": "Aufgaben auf niedrigster Ebene lösen",
+    "Beispielsatz": "Subsidiarität stärkt Kommunen vor dem Zentralstaat.",
+    "Synonyme": "Näheprinzip, Dezentralität",
+    "Antonyme": "Zentralismus",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Transparenz",
+    "Erläuterung": "Nachvollziehbarkeit staatlichen Handelns",
+    "Beispielsatz": "Transparenz schafft Vertrauen in Behörden.",
+    "Synonyme": "Offenheit, Nachvollziehbarkeit",
+    "Antonyme": "Intransparenz, Geheimhaltung",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Good Governance",
+    "Erläuterung": "Gute, verantwortliche Regierungsführung",
+    "Beispielsatz": "Good Governance bekämpft Korruption.",
+    "Synonyme": "verantwortungsvolle Führung, Rechtsstaatlichkeit",
+    "Antonyme": "Misswirtschaft, Korruption",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Souveränität",
+    "Erläuterung": "Unabhängigkeit und Selbstbestimmung eines Staates",
+    "Beispielsatz": "Die Souveränität erlaubt eigene Entscheidungen in der Außenpolitik.",
+    "Synonyme": "Unabhängigkeit, Eigenständigkeit",
+    "Antonyme": "Abhängigkeit",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Diplomatie",
+    "Erläuterung": "Verhandlungsführung zwischen Staaten",
+    "Beispielsatz": "Diplomatie hilft, Konflikte ohne Gewalt zu lösen.",
+    "Synonyme": "Außenpolitik, Verhandlungskunst",
+    "Antonyme": "Konfrontation",
+    "Thema": "Politik & Gesellschaft"
+  },
+  {
+    "Fremdwort": "Angebot",
+    "Erläuterung": "Menge an Gütern/Dienstleistungen zum Verkauf",
+    "Beispielsatz": "Im Sommer ist das Angebot an Obst größer.",
+    "Synonyme": "Offerte, Bereitstellung",
+    "Antonyme": "Nachfrage",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Nachfrage",
+    "Erläuterung": "Wunsch der Käufer nach Gütern",
+    "Beispielsatz": "Die Nachfrage nach E‑Bikes steigt weiter.",
+    "Synonyme": "Kaufinteresse, Bedarf",
+    "Antonyme": "Angebot",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Markt",
+    "Erläuterung": "Ort/System des Handelns",
+    "Beispielsatz": "Auf dem Markt treffen Angebot und Nachfrage aufeinander.",
+    "Synonyme": "Handelsplatz, Absatzraum",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Wettbewerb",
+    "Erläuterung": "Konkurrenz zwischen Anbietern",
+    "Beispielsatz": "Wettbewerb senkt Preise und fördert Qualität.",
+    "Synonyme": "Konkurrenz, Rivalität",
+    "Antonyme": "Monopol",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Monopol",
+    "Erläuterung": "Einziger Anbieter beherrscht den Markt",
+    "Beispielsatz": "Ohne Konkurrenz hat ein Monopol viel Preismacht.",
+    "Synonyme": "Alleinstellung, Marktbeherrschung",
+    "Antonyme": "Wettbewerb, Polypol",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Oligopol",
+    "Erläuterung": "Wenige große Anbieter dominieren",
+    "Beispielsatz": "Im Mobilfunk herrscht oft Oligopol.",
+    "Synonyme": "Wenig-Anbieter-Markt, Konzentration",
+    "Antonyme": "Polypol",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Inflation",
+    "Erläuterung": "Allgemeiner Preisanstieg",
+    "Beispielsatz": "Durch Inflation wird der Einkauf teurer.",
+    "Synonyme": "Preissteigerung, Geldentwertung",
+    "Antonyme": "Deflation",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Deflation",
+    "Erläuterung": "Allgemeiner Preisrückgang",
+    "Beispielsatz": "Deflation verunsichert Käufer und Firmen.",
+    "Synonyme": "Preisverfall, Teuerungsrückgang",
+    "Antonyme": "Inflation",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Rezession",
+    "Erläuterung": "Längerer Wirtschaftsabschwung",
+    "Beispielsatz": "In der Rezession steigt die Arbeitslosigkeit.",
+    "Synonyme": "Abschwung, Schrumpfung",
+    "Antonyme": "Aufschwung, Boom",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Aufschwung",
+    "Erläuterung": "Phase wachsenden Wohlstands",
+    "Beispielsatz": "Nach der Krise setzte ein Aufschwung ein.",
+    "Synonyme": "Boom, Expansion",
+    "Antonyme": "Rezession",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Bruttoinlandsprodukt",
+    "Erläuterung": "Wert aller Güter eines Landes pro Jahr",
+    "Beispielsatz": "Das BIP pro Kopf ist ein Wohlstandsindikator.",
+    "Synonyme": "BIP, Wirtschaftsleistung",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Konjunktur",
+    "Erläuterung": "Allgemeine Wirtschaftslage",
+    "Beispielsatz": "Die Konjunktur zieht langsam wieder an.",
+    "Synonyme": "Wirtschaftslage, Zyklus",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Investition",
+    "Erläuterung": "Geldeinsatz für künftigen Nutzen",
+    "Beispielsatz": "Die Firma investiert in neue Maschinen.",
+    "Synonyme": "Kapitalanlage, Aufwand",
+    "Antonyme": "Desinvestition",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Rendite",
+    "Erläuterung": "Ertrag aus einer Geldanlage",
+    "Beispielsatz": "Die Rendite des Fonds lag bei 5 %.",
+    "Synonyme": "Ertrag, Gewinnquote",
+    "Antonyme": "Verlust",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Kredit",
+    "Erläuterung": "Geliehenes Geld mit Rückzahlungspflicht",
+    "Beispielsatz": "Für das Auto nahm er einen Kredit auf.",
+    "Synonyme": "Darlehen, Finanzierung",
+    "Antonyme": "Tilgung, Rückzahlung (als Ereignis)",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Zinsen",
+    "Erläuterung": "Preis für geliehenes Geld",
+    "Beispielsatz": "Die Bank verlangt 3 % Zinsen.",
+    "Synonyme": "Finanzierungskosten, Verzinsung",
+    "Antonyme": "Zinsfreiheit",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Liquidität",
+    "Erläuterung": "Fähigkeit, Rechnungen pünktlich zu zahlen",
+    "Beispielsatz": "Hohe Liquidität verhindert Engpässe.",
+    "Synonyme": "Zahlungsfähigkeit, Cash",
+    "Antonyme": "Illiquidität, Zahlungsunfähigkeit",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Insolvenz",
+    "Erläuterung": "Zahlungsunfähigkeit eines Unternehmens",
+    "Beispielsatz": "Wegen Schulden meldete die Firma Insolvenz an.",
+    "Synonyme": "Bankrott, Pleite",
+    "Antonyme": "Sanierung, Zahlungsfähigkeit",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Subvention",
+    "Erläuterung": "Staatlicher Geldzuschuss",
+    "Beispielsatz": "Landwirte erhalten Subventionen für bestimmte Produkte.",
+    "Synonyme": "Zuschuss, Beihilfe",
+    "Antonyme": "Abgabe, Steuerlast",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Globalisierung",
+    "Erläuterung": "Weltweite Vernetzung von Märkten",
+    "Beispielsatz": "Globalisierung erleichtert Handel und Austausch.",
+    "Synonyme": "Weltvernetzung, Integration",
+    "Antonyme": "Abschottung, Isolation",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Freihandel",
+    "Erläuterung": "Handel ohne Zölle/Barrieren",
+    "Beispielsatz": "Freihandel senkt Preise für Verbraucher.",
+    "Synonyme": "Zollfreiheit, Handelsliberalisierung",
+    "Antonyme": "Protektionismus",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Protektionismus",
+    "Erläuterung": "Schutz der eigenen Wirtschaft durch Zölle",
+    "Beispielsatz": "Protektionismus verteuert Importe.",
+    "Synonyme": "Handelsschranken, Abschottung",
+    "Antonyme": "Freihandel, Offenheit",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Börse",
+    "Erläuterung": "Markt für Wertpapiere",
+    "Beispielsatz": "Aktienkurse entstehen an der Börse.",
+    "Synonyme": "Aktienmarkt, Parkett",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Aktie",
+    "Erläuterung": "Anteil an einem Unternehmen",
+    "Beispielsatz": "Mit Aktien beteiligt man sich an Firmengewinnen.",
+    "Synonyme": "Unternehmensanteil, Anteilsschein",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Dividende",
+    "Erläuterung": "Gewinnanteil für Aktionäre",
+    "Beispielsatz": "Die Dividende wird einmal jährlich ausgeschüttet.",
+    "Synonyme": "Gewinnausschüttung, Gewinnanteil",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Spekulation",
+    "Erläuterung": "Kauf in Erwartung eines Gewinns",
+    "Beispielsatz": "Immobilienspekulation kann riskant sein.",
+    "Synonyme": "Wette, Risikoanlage",
+    "Antonyme": "Absicherung",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Produktionskosten",
+    "Erläuterung": "Kosten der Herstellung",
+    "Beispielsatz": "Höhere Löhne erhöhen Produktionskosten.",
+    "Synonyme": "Herstellkosten, Fertigungskosten",
+    "Antonyme": "Erlös, Gewinn",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Gewinn",
+    "Erläuterung": "Überschuss nach Kosten",
+    "Beispielsatz": "Nach Abzug aller Kosten bleibt Gewinn übrig.",
+    "Synonyme": "Profit, Überschuss",
+    "Antonyme": "Verlust, Defizit",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Verlust",
+    "Erläuterung": "Fehlbetrag nach Kosten",
+    "Beispielsatz": "Die Firma machte im Quartal Verlust.",
+    "Synonyme": "Defizit, Minus",
+    "Antonyme": "Gewinn, Plus",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Deckungsbeitrag",
+    "Erläuterung": "Erlös minus variable Kosten",
+    "Beispielsatz": "Der Deckungsbeitrag zeigt, was zur Fixkosten-Deckung bleibt.",
+    "Synonyme": "Beitragsmarge, Contribution",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Skaleneffekt",
+    "Erläuterung": "Kostenvorteil durch größere Mengen",
+    "Beispielsatz": "Skaleneffekte senken Stückkosten.",
+    "Synonyme": "Größenvorteil, Economies of Scale",
+    "Antonyme": "Diseconomies",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Break-even",
+    "Erläuterung": "Punkt, an dem Gewinn = 0 ist",
+    "Beispielsatz": "Am Break-even decken Erlöse die Kosten genau.",
+    "Synonyme": "Gewinnschwelle, Kostendeckung",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Cashflow",
+    "Erläuterung": "Ein- minus Auszahlungen in einer Periode",
+    "Beispielsatz": "Ein positiver Cashflow sichert die Liquidität.",
+    "Synonyme": "Zahlungsstrom, Mittelzufluss",
+    "Antonyme": "Mittelabfluss",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Benchmarking",
+    "Erläuterung": "Vergleich mit den Besten der Branche",
+    "Beispielsatz": "Beim Benchmarking lernt man von Marktführern.",
+    "Synonyme": "Leistungsvergleich, Best-Practice",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Supply Chain",
+    "Erläuterung": "Kette vom Rohstoff bis zum Kunden",
+    "Beispielsatz": "Störungen in der Supply Chain verzögern Lieferungen.",
+    "Synonyme": "Lieferkette, Wertschöpfungskette",
+    "Antonyme": "–",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Just-in-time",
+    "Erläuterung": "Produktion exakt zum Bedarfstermin",
+    "Beispielsatz": "Just-in-time spart Lagerkosten.",
+    "Synonyme": "Bedarfssynchron, zeitgenau",
+    "Antonyme": "Vorratsproduktion",
+    "Thema": "Wirtschaft"
+  },
+  {
+    "Fremdwort": "Atom",
+    "Erläuterung": "Kleinste Einheit eines Elements",
+    "Beispielsatz": "Alles um uns herum besteht aus Atomen.",
+    "Synonyme": "Grundbaustein, Teilchen",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Molekül",
+    "Erläuterung": "Verbundenes System aus Atomen",
+    "Beispielsatz": "Wasser ist ein Molekül aus H und O.",
+    "Synonyme": "Teilchen, Verbindung",
+    "Antonyme": "Atom",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Ion",
+    "Erläuterung": "Elektrisch geladenes Teilchen",
+    "Beispielsatz": "Kochsalz zerfällt in Wasser in Ionen.",
+    "Synonyme": "geladenes Teilchen, Kation/Anion",
+    "Antonyme": "neutrales Teilchen",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Isotop",
+    "Erläuterung": "Variante eines Elements mit anderer Neutronenzahl",
+    "Beispielsatz": "Kohlenstoff‑14 ist ein Isotop zur Datierung.",
+    "Synonyme": "Nuklidvariante, Variantenatom",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Gravitation",
+    "Erläuterung": "Anziehung zwischen Massen",
+    "Beispielsatz": "Die Gravitation lässt Äpfel fallen.",
+    "Synonyme": "Schwerkraft, Erdanziehung",
+    "Antonyme": "Schwerelosigkeit",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Masse",
+    "Erläuterung": "Menge an Materie in einem Körper",
+    "Beispielsatz": "Ein Liter Wasser hat rund 1 kg Masse.",
+    "Synonyme": "Materiequantität, Trägheit",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Gewichtskraft",
+    "Erläuterung": "Kraft der Erdanziehung",
+    "Beispielsatz": "Auf dem Mond ist die Gewichtskraft kleiner.",
+    "Synonyme": "Gewicht, Gewichtskraftwirkung",
+    "Antonyme": "Schwerelosigkeit",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Geschwindigkeit",
+    "Erläuterung": "Weg pro Zeit",
+    "Beispielsatz": "Das Auto fuhr 100 km/h Geschwindigkeit.",
+    "Synonyme": "Tempo, Schnelligkeit",
+    "Antonyme": "Stillstand, Langsamkeit",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Beschleunigung",
+    "Erläuterung": "Änderung der Geschwindigkeit pro Zeit",
+    "Beispielsatz": "Der Zug beschleunigt stark beim Anfahren.",
+    "Synonyme": "Tempozuwachs, Acceleration",
+    "Antonyme": "Verzögerung",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Energie",
+    "Erläuterung": "Fähigkeit, Arbeit zu verrichten",
+    "Beispielsatz": "Strom liefert Energie für Geräte.",
+    "Synonyme": "Kraft, Antrieb",
+    "Antonyme": "Energieverlust",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Leistung",
+    "Erläuterung": "Energie pro Zeit",
+    "Beispielsatz": "Die Lampe hat 60 W Leistung.",
+    "Synonyme": "Arbeitsrate, Output",
+    "Antonyme": "Leistungsverlust",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Spannung",
+    "Erläuterung": "Elektrische Potentialdifferenz",
+    "Beispielsatz": "Die Batterie hat 1,5 V Spannung.",
+    "Synonyme": "Potentialdifferenz, Voltzahl",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Stromstärke",
+    "Erläuterung": "Ladungsmenge pro Zeit",
+    "Beispielsatz": "Die Sicherung misst die Stromstärke.",
+    "Synonyme": "Stromfluss, Ampere",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Widerstand",
+    "Erläuterung": "Hemmung des Stromflusses",
+    "Beispielsatz": "Ein langer Draht hat mehr Widerstand.",
+    "Synonyme": "Impedanz, Stromhemmnis",
+    "Antonyme": "Leitfähigkeit",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Magnetismus",
+    "Erläuterung": "Anziehung/Abstoßung durch Magnete",
+    "Beispielsatz": "Ein Kompass nutzt Magnetismus.",
+    "Synonyme": "magnetische Kraft, Feldwirkung",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Wärmeleitung",
+    "Erläuterung": "Übertragung von Wärme",
+    "Beispielsatz": "Metall leitet Wärme besser als Holz.",
+    "Synonyme": "Wärmetransport, Wärmefluss",
+    "Antonyme": "Wärmeisolierung",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Diffusion",
+    "Erläuterung": "Selbständige Durchmischung von Teilchen",
+    "Beispielsatz": "Duft verteilt sich durch Diffusion im Raum.",
+    "Synonyme": "Teilchenverteilung, Ausbreitung",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Osmose",
+    "Erläuterung": "Wasserbewegung durch Membran",
+    "Beispielsatz": "Pflanzenwurzeln nutzen Osmose.",
+    "Synonyme": "Lösungsmitteltransport, Halbdurchlässigkeit",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Photosynthese",
+    "Erläuterung": "Aufbau von Zucker aus CO₂ und Wasser mit Licht",
+    "Beispielsatz": "Durch Photosynthese entsteht Sauerstoff.",
+    "Synonyme": "Assimilation, Lichtreaktion",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Chlorophyll",
+    "Erläuterung": "Grüner Pflanzenfarbstoff",
+    "Beispielsatz": "Chlorophyll gibt Blättern ihre Farbe.",
+    "Synonyme": "Blattgrün, Farbstoff",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Enzym",
+    "Erläuterung": "Biokatalysator im Stoffwechsel",
+    "Beispielsatz": "Speichel enthält Enzyme zum Stärkeabbau.",
+    "Synonyme": "Katalysator, Protein",
+    "Antonyme": "Inhibitor",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Protein",
+    "Erläuterung": "Eiweiß als Zellbaustein",
+    "Beispielsatz": "Bohnen liefern viel Protein.",
+    "Synonyme": "Eiweiß, Polypeptid",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Kohlenhydrat",
+    "Erläuterung": "Energieliefernder Nährstoff",
+    "Beispielsatz": "Brot enthält viele Kohlenhydrate.",
+    "Synonyme": "Zuckerstoff, Saccharid",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Lipid",
+    "Erläuterung": "Fett/Fettähnlicher Stoff",
+    "Beispielsatz": "Öl ist ein Lipid.",
+    "Synonyme": "Fett, Triglycerid",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "DNA",
+    "Erläuterung": "Träger der Erbinformation",
+    "Beispielsatz": "DNA bestimmt Merkmale wie Augenfarbe.",
+    "Synonyme": "Erbsubstanz, Desoxyribonukleinsäure",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "RNA",
+    "Erläuterung": "Molekül für Genablesung/Proteinbau",
+    "Beispielsatz": "RNA überträgt Baupläne im Zellkern.",
+    "Synonyme": "Ribonukleinsäure, Boten-RNA",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Mutation",
+    "Erläuterung": "Veränderung der Erbinformation",
+    "Beispielsatz": "Mutationen können neue Eigenschaften bringen.",
+    "Synonyme": "Erbänderung, Genvariation",
+    "Antonyme": "Stabilität",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Evolution",
+    "Erläuterung": "Entwicklung der Arten über Zeit",
+    "Beispielsatz": "Die Evolution erklärt Vielfalt des Lebens.",
+    "Synonyme": "Entwicklung, Wandel",
+    "Antonyme": "Stagnation",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Ökosystem",
+    "Erläuterung": "Verbund von Lebensraum und Lebensgemeinschaft",
+    "Beispielsatz": "Ein Teich ist ein kleines Ökosystem.",
+    "Synonyme": "Lebensraumverbund, Biozönose",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Biodiversität",
+    "Erläuterung": "Vielfalt der Arten/Erbanlagen/Ökosysteme",
+    "Beispielsatz": "Regenwälder besitzen hohe Biodiversität.",
+    "Synonyme": "Artenvielfalt, Vielfalt",
+    "Antonyme": "Artenarmut",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Klimawandel",
+    "Erläuterung": "Langfristige Klimaänderung durch Treibhausgase",
+    "Beispielsatz": "Der Klimawandel bringt häufigere Hitzewellen.",
+    "Synonyme": "Erderwärmung, Klimaänderung",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Treibhauseffekt",
+    "Erläuterung": "Erwärmung durch Treibhausgase",
+    "Beispielsatz": "CO₂ verstärkt den Treibhauseffekt.",
+    "Synonyme": "Strahlungseffekt, Rückhalt",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Recycling",
+    "Erläuterung": "Wiederverwertung von Materialien",
+    "Beispielsatz": "Glas lässt sich gut recyceln.",
+    "Synonyme": "Wiederverwertung, Aufbereitung",
+    "Antonyme": "Deponie, Verbrennung",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Nachhaltigkeit (öko)",
+    "Erläuterung": "Ressourcen so nutzen, dass sie erhalten bleiben",
+    "Beispielsatz": "Nachhaltigkeit richtet den Blick auf morgen.",
+    "Synonyme": "Zukunftsfähigkeit, Ressourcenschonung",
+    "Antonyme": "Verschwendung",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Rohstoff",
+    "Erläuterung": "Natürlicher Ausgangsstoff",
+    "Beispielsatz": "Holz ist ein nachwachsender Rohstoff.",
+    "Synonyme": "Grundstoff, Ressource",
+    "Antonyme": "Fertigprodukt",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Halbleiter",
+    "Erläuterung": "Material mit mittlerer Leitfähigkeit",
+    "Beispielsatz": "Chips bestehen aus Halbleitern.",
+    "Synonyme": "Semiconductor, Teilleiter",
+    "Antonyme": "Leiter, Isolator",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Laser",
+    "Erläuterung": "Quelle stark gebündelten Lichts",
+    "Beispielsatz": "Laser schneiden präzise Metall.",
+    "Synonyme": "Lichtverstärker, Strahlquelle",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Nanotechnologie",
+    "Erläuterung": "Technik im Größenbereich von Nanometern",
+    "Beispielsatz": "Nanotechnologie steckt in Sonnencreme-Partikeln.",
+    "Synonyme": "Nanotech, Kleinsttechnik",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Titration",
+    "Erläuterung": "Messverfahren zur Konzentrationsbestimmung",
+    "Beispielsatz": "Mit Titration ermittelt man Säuregehalt.",
+    "Synonyme": "Maßanalyse, Neutralisation",
+    "Antonyme": "–",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Katalysator",
+    "Erläuterung": "Stoff, der Reaktionen beschleunigt",
+    "Beispielsatz": "Im Auto wandelt ein Katalysator Abgase um.",
+    "Synonyme": "Beschleuniger, Enabler",
+    "Antonyme": "Inhibitor",
+    "Thema": "Naturwissenschaften"
+  },
+  {
+    "Fremdwort": "Philosophie",
+    "Erläuterung": "Lehre vom Denken und Erkennen",
+    "Beispielsatz": "Philosophie stellt grundlegende Fragen zum Leben.",
+    "Synonyme": "Weisheitslehre, Erkenntnislehre",
+    "Antonyme": "–",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Ethik",
+    "Erläuterung": "Lehre vom moralisch richtigen Handeln",
+    "Beispielsatz": "Ethik hilft bei schwierigen Entscheidungen.",
+    "Synonyme": "Moral, Wertelehre",
+    "Antonyme": "–",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Moral",
+    "Erläuterung": "Werte und Normen einer Gemeinschaft",
+    "Beispielsatz": "Ehrlichkeit gehört zur Moral vieler Menschen.",
+    "Synonyme": "Sittlichkeit, Werteordnung",
+    "Antonyme": "Unmoral",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Tugend",
+    "Erläuterung": "Positive, gefestigte Charaktereigenschaft",
+    "Beispielsatz": "Geduld gilt als Tugend im Alltag.",
+    "Synonyme": "Charakterstärke, Vorzug",
+    "Antonyme": "Laster",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Laster",
+    "Erläuterung": "Schlechte Gewohnheit/Eigenschaft",
+    "Beispielsatz": "Geiz wird oft als Laster gesehen.",
+    "Synonyme": "Untugend, Schwäche",
+    "Antonyme": "Tugend",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Humanismus",
+    "Erläuterung": "Weltbild mit Fokus auf Würde des Menschen",
+    "Beispielsatz": "Humanismus betont Bildung und Vernunft.",
+    "Synonyme": "Menschenfreundlichkeit, Menschenbild",
+    "Antonyme": "Menschenfeindlichkeit",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Idealismus",
+    "Erläuterung": "Vorrang von Ideen/Geistigem",
+    "Beispielsatz": "Ihr Idealismus motiviert freiwilliges Engagement.",
+    "Synonyme": "Prinzipientreue, Ideenlehre",
+    "Antonyme": "Materialismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Materialismus",
+    "Erläuterung": "Vorrang des Materiellen",
+    "Beispielsatz": "Materialismus betont Stoffliches statt Geistigem.",
+    "Synonyme": "Sachorientierung, Naturalismus",
+    "Antonyme": "Idealismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Nihilismus",
+    "Erläuterung": "Verneinung fester Werte/Sinne",
+    "Beispielsatz": "Nihilismus glaubt an keinen höheren Sinn.",
+    "Synonyme": "Sinnverneinung, Wertablehnung",
+    "Antonyme": "Werteglaube, Sinnstiftung",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Existenzialismus",
+    "Erläuterung": "Freiheit und Verantwortung des Einzelnen",
+    "Beispielsatz": "Existenzialismus betont persönliche Entscheidungen.",
+    "Synonyme": "Existenzphilosophie, Selbstverantwortung",
+    "Antonyme": "Determinismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Determinismus",
+    "Erläuterung": "Alles ist kausal vorbestimmt",
+    "Beispielsatz": "Im Determinismus hat Zufall keinen Platz.",
+    "Synonyme": "Vorherbestimmung, Kausalität",
+    "Antonyme": "Freiheit, Zufall",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Empirismus",
+    "Erläuterung": "Wissen beruht auf Erfahrung",
+    "Beispielsatz": "Empirismus stützt sich auf Beobachtung und Versuch.",
+    "Synonyme": "Erfahrungslehre, Induktion",
+    "Antonyme": "Rationalismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Rationalismus",
+    "Erläuterung": "Vernunft als Quelle des Wissens",
+    "Beispielsatz": "Rationalismus betont logisches Denken.",
+    "Synonyme": "Vernunftlehre, Deduktion",
+    "Antonyme": "Empirismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Skeptizismus",
+    "Erläuterung": "Grundsätzliche Haltung des Zweifelns",
+    "Beispielsatz": "Skeptizismus prüft Behauptungen genau.",
+    "Synonyme": "Zweifelhaltung, Kritikgeist",
+    "Antonyme": "Leichtgläubigkeit, Gewissheit",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Agnostizismus",
+    "Erläuterung": "Haltung: Über Gott weiß man nichts Sicheres",
+    "Beispielsatz": "Agnostizismus vermeidet feste Aussagen über Gott.",
+    "Synonyme": "Nichtwissen-Haltung, Unentschiedenheit",
+    "Antonyme": "Glaubensgewissheit",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Atheismus",
+    "Erläuterung": "Ablehnung eines Gottesglaubens",
+    "Beispielsatz": "Atheismus sieht die Welt ohne Schöpferwesen.",
+    "Synonyme": "Gottlosigkeit, Unglaube",
+    "Antonyme": "Theismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Theismus",
+    "Erläuterung": "Glaube an Gott/Götter",
+    "Beispielsatz": "Der Theismus prägt viele Religionen.",
+    "Synonyme": "Gottesglaube, Religiosität",
+    "Antonyme": "Atheismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Utilitarismus",
+    "Erläuterung": "Nutzenethik: größtes Glück der meisten",
+    "Beispielsatz": "Utilitarismus bewertet Folgen einer Handlung.",
+    "Synonyme": "Nützlichkeitsprinzip, Folgenethik",
+    "Antonyme": "Pflichtethik, Deontologie",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Deontologie",
+    "Erläuterung": "Pflichten- und Regelethik",
+    "Beispielsatz": "Deontologie fordert, Regeln auch bei Nachteilen einzuhalten.",
+    "Synonyme": "Pflichtethik, Regelethik",
+    "Antonyme": "Utilitarismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Hedonismus",
+    "Erläuterung": "Lust und Genuss als Ziel",
+    "Beispielsatz": "Hedonismus stellt Freude in den Mittelpunkt.",
+    "Synonyme": "Lustprinzip, Genusslehre",
+    "Antonyme": "Askese",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Askese",
+    "Erläuterung": "Bewusster Verzicht und Selbstdisziplin",
+    "Beispielsatz": "Mönche leben oft in Askese.",
+    "Synonyme": "Enthaltsamkeit, Selbstzucht",
+    "Antonyme": "Hedonismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Dualismus",
+    "Erläuterung": "Zwei Grundprinzipien (z. B. Geist/Körper)",
+    "Beispielsatz": "Dualismus trennt Körper und Geist.",
+    "Synonyme": "Zweiteilung, Zweiheit",
+    "Antonyme": "Monismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Monismus",
+    "Erläuterung": "Alles geht auf ein Prinzip zurück",
+    "Beispielsatz": "Monismus sieht Einheit statt Zweiheit.",
+    "Synonyme": "Einheitslehre, Einheit",
+    "Antonyme": "Dualismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Dogmatismus",
+    "Erläuterung": "Starres Festhalten an Lehren",
+    "Beispielsatz": "Dogmatismus bremst neue Ideen aus.",
+    "Synonyme": "Starrsinn, Lehreifer",
+    "Antonyme": "Offenheit, Skepsis",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Relativismus",
+    "Erläuterung": "Wahrheit ist perspektivabhängig",
+    "Beispielsatz": "Relativismus verneint absolute Maßstäbe.",
+    "Synonyme": "Perspektivismus, Kontextualismus",
+    "Antonyme": "Absolutismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Absolutismus (phil.)",
+    "Erläuterung": "Annahme absoluter Wahrheiten",
+    "Beispielsatz": "Philosophischer Absolutismus widerspricht Relativismus.",
+    "Synonyme": "Wahrheitsglaube, Unbedingtheit",
+    "Antonyme": "Relativismus",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Pragmatismus",
+    "Erläuterung": "Wahr ist, was funktioniert",
+    "Beispielsatz": "Pragmatismus fragt nach der praktischen Wirkung.",
+    "Synonyme": "Zweckdenken, Nützlichkeitsdenken",
+    "Antonyme": "Prinzipienreiterei, Theoriegläubigkeit",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Utopie",
+    "Erläuterung": "Idealbild einer perfekten Gesellschaft",
+    "Beispielsatz": "Eine Welt ohne Armut bleibt oft Utopie.",
+    "Synonyme": "Idealvorstellung, Wunschbild",
+    "Antonyme": "Dystopie",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Dystopie",
+    "Erläuterung": "Negatives Zukunftsbild",
+    "Beispielsatz": "Viele Filme zeigen eine Dystopie mit Kontrolle.",
+    "Synonyme": "Schreckensvision, Antiutopie",
+    "Antonyme": "Utopie",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Kategorischer Imperativ",
+    "Erläuterung": "Moralprinzip Kants für allgemeine Regeln",
+    "Beispielsatz": "Handle so, dass deine Regel für alle taugt – kategorischer Imperativ.",
+    "Synonyme": "Allgemeinheitsprinzip, Kant-Gebot",
+    "Antonyme": "–",
+    "Thema": "Philosophie & Ethik"
+  },
+  {
+    "Fremdwort": "Ästhetik",
+    "Erläuterung": "Lehre vom Schönen und Kunstempfinden",
+    "Beispielsatz": "Ästhetik untersucht, warum etwas als schön gilt.",
+    "Synonyme": "Schönheitslehre, Kunsttheorie",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Avantgarde",
+    "Erläuterung": "Künstlerische Vorhut mit neuen Formen",
+    "Beispielsatz": "Die Avantgarde bricht bewusst mit Traditionen.",
+    "Synonyme": "Vorreiter, Pionierkunst",
+    "Antonyme": "Tradition",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Barock",
+    "Erläuterung": "Prunkvoller Stil des 17. Jahrhunderts",
+    "Beispielsatz": "Barocke Kirchen sind reich verziert.",
+    "Synonyme": "Stilepoche, Prunkstil",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Klassik",
+    "Erläuterung": "Epoche der Klarheit und Harmonie",
+    "Beispielsatz": "Beethovens Werke stehen für die Klassik.",
+    "Synonyme": "Hochkultur, Klassische Epoche",
+    "Antonyme": "Moderne",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Moderne",
+    "Erläuterung": "Kunst/Architektur des 20. Jahrhunderts",
+    "Beispielsatz": "Die Moderne setzt auf einfache Formen.",
+    "Synonyme": "Zeitkunst, Gegenwartskunst",
+    "Antonyme": "Historismus, Klassik",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Renaissance",
+    "Erläuterung": "Wiedergeburt antiker Kunst/Ideen",
+    "Beispielsatz": "Die Renaissance begann in Italien.",
+    "Synonyme": "Wiedergeburtszeit, Frühmoderne",
+    "Antonyme": "Mittelalterkunst",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Impressionismus",
+    "Erläuterung": "Malerei mit Licht und Momentwirkung",
+    "Beispielsatz": "Monet prägte den Impressionismus.",
+    "Synonyme": "Lichteindruck, Momentkunst",
+    "Antonyme": "Expressionismus",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Expressionismus",
+    "Erläuterung": "Kunst mit starken Gefühlen und Farben",
+    "Beispielsatz": "Expressionismus drückt Innenleben aus.",
+    "Synonyme": "Gefühlsmalerei, Ausdruckskunst",
+    "Antonyme": "Realismus",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Realismus",
+    "Erläuterung": "Möglichst wirklichkeitsnahe Darstellung",
+    "Beispielsatz": "Realismus zeigt Alltag ohne Beschönigung.",
+    "Synonyme": "Wirklichkeitskunst, Naturalismus",
+    "Antonyme": "Surrealismus",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Surrealismus",
+    "Erläuterung": "Traumhafte, unwirkliche Bildwelten",
+    "Beispielsatz": "Dalí ist Symbol des Surrealismus.",
+    "Synonyme": "Traumkunst, Überwirklichkeit",
+    "Antonyme": "Realismus",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Kubismus",
+    "Erläuterung": "Zerlegung in geometrische Formen",
+    "Beispielsatz": "Picasso begründete den Kubismus mit.",
+    "Synonyme": "Formkubierung, Facettierung",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Minimalismus",
+    "Erläuterung": "Reduktion auf das Wesentliche",
+    "Beispielsatz": "Minimalismus verzichtet auf Deko.",
+    "Synonyme": "Einfachheit, Reduktion",
+    "Antonyme": "Überladenheit",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Symphonie",
+    "Erläuterung": "Mehrteilige Komposition für Orchester",
+    "Beispielsatz": "Mahler schrieb monumentale Symphonien.",
+    "Synonyme": "Sinfonie, Orchesterwerk",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Oper",
+    "Erläuterung": "Musiktheater mit Orchester",
+    "Beispielsatz": "In der Oper wird die Handlung gesungen.",
+    "Synonyme": "Musiktheater, Bühnenwerk",
+    "Antonyme": "Schauspiel",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Skulptur",
+    "Erläuterung": "Dreidimensionales Kunstwerk",
+    "Beispielsatz": "Die Skulptur aus Marmor steht im Museum.",
+    "Synonyme": "Plastik, Statue",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Fresko",
+    "Erläuterung": "Wandmalerei auf frischem Putz",
+    "Beispielsatz": "Die Kapelle ist mit Fresken ausgemalt.",
+    "Synonyme": "Wandgemälde, Putzmalerei",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Perspektive",
+    "Erläuterung": "Darstellung räumlicher Tiefe",
+    "Beispielsatz": "Die Perspektive macht Bilder plastisch.",
+    "Synonyme": "Blickwinkel, Raumdarstellung",
+    "Antonyme": "Verzerrung",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Komposition",
+    "Erläuterung": "Anordnung von Elementen",
+    "Beispielsatz": "Die Komposition lenkt den Blick des Betrachters.",
+    "Synonyme": "Gestaltung, Aufbau",
+    "Antonyme": "Unordnung",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Architektur",
+    "Erläuterung": "Kunst des Bauens",
+    "Beispielsatz": "Die Architektur prägt das Stadtbild.",
+    "Synonyme": "Baukunst, Bautechnik",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Design",
+    "Erläuterung": "Gestaltungsentwurf mit Funktion und Form",
+    "Beispielsatz": "Das Design des Stuhls wirkt klar und modern.",
+    "Synonyme": "Gestaltung, Entwurf",
+    "Antonyme": "–",
+    "Thema": "Kunst & Kultur"
+  },
+  {
+    "Fremdwort": "Algebra",
+    "Erläuterung": "Rechnen mit Symbolen und Gleichungen",
+    "Beispielsatz": "In Algebra löst man Gleichungen mit Unbekannten.",
+    "Synonyme": "Gleichungslehre, Symbolrechnung",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Geometrie",
+    "Erläuterung": "Lehre von Formen, Flächen und Räumen",
+    "Beispielsatz": "Geometrie berechnet Längen und Winkel.",
+    "Synonyme": "Raumlehre, Formenlehre",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Arithmetik",
+    "Erläuterung": "Grundrechenarten mit Zahlen",
+    "Beispielsatz": "Arithmetik umfasst Addieren bis Dividieren.",
+    "Synonyme": "Rechenlehre, Zahlentheorie (Basis)",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Bruch",
+    "Erläuterung": "Zahl als Verhältnis zweier Ganzer",
+    "Beispielsatz": "½ bezeichnet die Hälfte als Bruch.",
+    "Synonyme": "Teilzahl, Quotient",
+    "Antonyme": "ganze Zahl",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Prozent",
+    "Erläuterung": "Hundertstel eines Ganzen",
+    "Beispielsatz": "50 % entspricht der Hälfte.",
+    "Synonyme": "Hundertstel, Anteil",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Wurzel",
+    "Erläuterung": "Zahl, die quadriert eine andere ergibt",
+    "Beispielsatz": "Die Wurzel aus 9 ist 3.",
+    "Synonyme": "Quadratwurzel, Radikal",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Potenz",
+    "Erläuterung": "Wiederholte Multiplikation",
+    "Beispielsatz": "2³ bedeutet 2×2×2.",
+    "Synonyme": "Exponent, Potenzierung",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Funktion",
+    "Erläuterung": "Zuordnung zwischen Größen",
+    "Beispielsatz": "y=2x ist eine lineare Funktion.",
+    "Synonyme": "Abbildung, Zuordnung",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Variable",
+    "Erläuterung": "Platzhalter für Werte",
+    "Beispielsatz": "In x+5=8 ist x eine Variable.",
+    "Synonyme": "Unbekannte, Platzhalter",
+    "Antonyme": "Konstante",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Konstante",
+    "Erläuterung": "Fester, unveränderlicher Wert",
+    "Beispielsatz": "c ist als Lichtgeschwindigkeit eine Konstante.",
+    "Synonyme": "Fixwert, unveränderlicher Wert",
+    "Antonyme": "Variable",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Gleichung",
+    "Erläuterung": "Ausdruck mit Gleichheitszeichen",
+    "Beispielsatz": "3x+2=11 ist eine Gleichung.",
+    "Synonyme": "Gleichheitsbeziehung, Formel",
+    "Antonyme": "Ungleichung",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Ungleichung",
+    "Erläuterung": "Vergleich ohne Gleichheit",
+    "Beispielsatz": "5>3 ist eine Ungleichung.",
+    "Synonyme": "Größenvergleich, Relation",
+    "Antonyme": "Gleichung",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Integral",
+    "Erläuterung": "Fläche unter einer Kurve",
+    "Beispielsatz": "Das Integral liefert Gesamtmengen.",
+    "Synonyme": "Flächenberechnung, Stammfunktion",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Ableitung",
+    "Erläuterung": "Momentane Änderungsrate",
+    "Beispielsatz": "Die Ableitung misst Steigung einer Kurve.",
+    "Synonyme": "Differenzierung, Änderungsrate",
+    "Antonyme": "Integration",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Vektor",
+    "Erläuterung": "Größe mit Richtung und Betrag",
+    "Beispielsatz": "Geschwindigkeit ist ein Vektor.",
+    "Synonyme": "Richtungsgröße, Pfeilgröße",
+    "Antonyme": "Skalar",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Skalar",
+    "Erläuterung": "Größe nur mit Betrag",
+    "Beispielsatz": "Temperatur ist ein Skalar.",
+    "Synonyme": "Einzelwert, Zahlenwert",
+    "Antonyme": "Vektor",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Hypothese",
+    "Erläuterung": "Zu prüfende Annahme",
+    "Beispielsatz": "Die Hypothese wird durch Daten getestet.",
+    "Synonyme": "Annahme, Vermutung",
+    "Antonyme": "Beweis, Tatsache",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Axiom",
+    "Erläuterung": "Grundsatz ohne Beweis",
+    "Beispielsatz": "Axiome bilden das Fundament eines Systems.",
+    "Synonyme": "Grundsatz, Postulat",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Theorem",
+    "Erläuterung": "Bewiesener mathematischer Satz",
+    "Beispielsatz": "Der Satz des Pythagoras ist ein Theorem.",
+    "Synonyme": "Lehrsatz, Satz",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Beweis",
+    "Erläuterung": "Logische Herleitung einer Aussage",
+    "Beispielsatz": "Der Beweis zeigt die Gültigkeit der Formel.",
+    "Synonyme": "Nachweis, Herleitung",
+    "Antonyme": "Widerlegung",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Logik",
+    "Erläuterung": "Regeln des gültigen Schließens",
+    "Beispielsatz": "Logik prüft Argumente auf Gültigkeit.",
+    "Synonyme": "Denkgesetze, Schlusslehre",
+    "Antonyme": "Unlogik",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Prämisse",
+    "Erläuterung": "Voraussetzung im Argument",
+    "Beispielsatz": "Stimmt die Prämisse nicht, kippt das Ergebnis.",
+    "Synonyme": "Voraussetzung, Annahme",
+    "Antonyme": "Konklusion",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Konklusion",
+    "Erläuterung": "Schlussfolgerung aus Prämissen",
+    "Beispielsatz": "Aus den Prämissen folgt die Konklusion.",
+    "Synonyme": "Schluss, Folgerung",
+    "Antonyme": "Prämisse",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Induktion",
+    "Erläuterung": "Vom Einzelnen zum Allgemeinen schließen",
+    "Beispielsatz": "Aus vielen Messungen entsteht durch Induktion ein Gesetz.",
+    "Synonyme": "Verallgemeinerung, Erfahrungsschluss",
+    "Antonyme": "Deduktion",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Deduktion",
+    "Erläuterung": "Vom Allgemeinen auf den Einzelfall schließen",
+    "Beispielsatz": "Aus einer Regel folgt deduktiv der Einzelfall.",
+    "Synonyme": "Ableitung, Folgerung",
+    "Antonyme": "Induktion",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Paradoxon (log.)",
+    "Erläuterung": "Aussage mit scheinbarem Widerspruch",
+    "Beispielsatz": "„Diese Aussage ist falsch“ ist paradox.",
+    "Synonyme": "Scheinwiderspruch, Antinomie",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Tautologie",
+    "Erläuterung": "Immer wahre Aussageform",
+    "Beispielsatz": "„A oder nicht A“ ist eine Tautologie.",
+    "Synonyme": "Allwahrheit, Selbstverständlichkeit",
+    "Antonyme": "Kontradiktion",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Kontradiktion",
+    "Erläuterung": "Widerspruch, der unmöglich wahr ist",
+    "Beispielsatz": "„A und nicht A“ ist eine Kontradiktion.",
+    "Synonyme": "Widerspruch, Unvereinbarkeit",
+    "Antonyme": "Tautologie",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Wahrscheinlichkeit",
+    "Erläuterung": "Eintrittschance eines Ereignisses",
+    "Beispielsatz": "Eine 6 zu würfeln hat 1/6 Wahrscheinlichkeit.",
+    "Synonyme": "Eintrittschance, Chance",
+    "Antonyme": "Unmöglichkeit",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Statistik",
+    "Erläuterung": "Erheben und Auswerten von Daten",
+    "Beispielsatz": "Statistik hilft Trends zu erkennen.",
+    "Synonyme": "Datenanalyse, Auswertung",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Median",
+    "Erläuterung": "Mittlerer Wert einer geordneten Reihe",
+    "Beispielsatz": "Der Median ist unempfindlich gegen Ausreißer.",
+    "Synonyme": "Zentralwert, 50‑Perzentil",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Mittelwert",
+    "Erläuterung": "Durchschnitt aller Werte",
+    "Beispielsatz": "Der Mittelwert der Noten liegt bei 2,5.",
+    "Synonyme": "Durchschnitt, Arithmetisches Mittel",
+    "Antonyme": "Extremwert",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Streuung",
+    "Erläuterung": "Maß für Variabilität von Daten",
+    "Beispielsatz": "Hohe Streuung zeigt große Unterschiede.",
+    "Synonyme": "Variabilität, Dispersion",
+    "Antonyme": "Konstanz",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Korrelation",
+    "Erläuterung": "Zusammenhang zwischen Variablen",
+    "Beispielsatz": "Mehr Lernen korreliert mit besseren Noten.",
+    "Synonyme": "Zusammenhang, Beziehung",
+    "Antonyme": "Unabhängigkeit",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Diagramm",
+    "Erläuterung": "Grafische Darstellung von Daten",
+    "Beispielsatz": "Ein Diagramm macht Zahlen anschaulich.",
+    "Synonyme": "Schaubild, Grafik",
+    "Antonyme": "–",
+    "Thema": "Mathematik & Logik"
+  },
+  {
+    "Fremdwort": "Analogie",
+    "Erläuterung": "Ähnlichkeit in Struktur/Funktion",
+    "Beispielsatz": "Die Analogie zum Wasserkreislauf macht das Thema greifbar.",
+    "Synonyme": "Ähnlichkeit, Vergleich",
+    "Antonyme": "Unterschied",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Antonym",
+    "Erläuterung": "Wort mit gegenteiliger Bedeutung",
+    "Beispielsatz": "„heiß“ ist das Antonym zu „kalt“.",
+    "Synonyme": "Gegenteil, Gegenwort",
+    "Antonyme": "Synonym",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Synonym",
+    "Erläuterung": "Wort mit gleicher/ähnlicher Bedeutung",
+    "Beispielsatz": "„Auto“ und „PKW“ sind Synonyme.",
+    "Synonyme": "gleichbedeutendes Wort, Ersatzwort",
+    "Antonyme": "Antonym",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Plagiat",
+    "Erläuterung": "Unerlaubtes Kopieren fremder Werke",
+    "Beispielsatz": "Ohne Quelle zu kopieren ist Plagiat.",
+    "Synonyme": "Abschreiben, Ideenraub",
+    "Antonyme": "Original",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Zitat",
+    "Erläuterung": "Wörtlich übernommene Aussage mit Quelle",
+    "Beispielsatz": "Er begann mit einem Zitat von Kant.",
+    "Synonyme": "Ausspruch, Belegstelle",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Kontext",
+    "Erläuterung": "Zusammenhang, in dem etwas steht",
+    "Beispielsatz": "Wörter versteht man richtig erst im Kontext.",
+    "Synonyme": "Zusammenhang, Rahmen",
+    "Antonyme": "Einzelheit",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Priorität",
+    "Erläuterung": "Vorrang einer Sache",
+    "Beispielsatz": "Sicherheit hat oberste Priorität.",
+    "Synonyme": "Vorrang, Wichtigkeit",
+    "Antonyme": "Nebensache",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Innovation",
+    "Erläuterung": "Einführung von Neuem",
+    "Beispielsatz": "Der 3D‑Druck ist eine Innovation in der Fertigung.",
+    "Synonyme": "Neuerung, Erfindung",
+    "Antonyme": "Tradition",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Tradition",
+    "Erläuterung": "Überlieferte Gewohnheit/Bräuche",
+    "Beispielsatz": "Das Fest folgt einer langen Tradition.",
+    "Synonyme": "Brauch, Gepflogenheit",
+    "Antonyme": "Innovation, Neuerung",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Konsens",
+    "Erläuterung": "Gemeinsame Übereinstimmung",
+    "Beispielsatz": "Am Ende fanden alle einen Konsens.",
+    "Synonyme": "Einigkeit, Übereinkunft",
+    "Antonyme": "Uneinigkeit, Dissens",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Kontroverse",
+    "Erläuterung": "Heftiger Streit über eine Frage",
+    "Beispielsatz": "Die Steuerpläne lösten eine Kontroverse aus.",
+    "Synonyme": "Meinungsstreit, Debatte",
+    "Antonyme": "Konsens",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "These",
+    "Erläuterung": "Zu begründende Behauptung",
+    "Beispielsatz": "Die These muss mit Argumenten gestützt werden.",
+    "Synonyme": "Behauptung, Annahme",
+    "Antonyme": "Widerlegung",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Argument",
+    "Erläuterung": "Begründung für eine Aussage",
+    "Beispielsatz": "Sein Argument überzeugte die Runde.",
+    "Synonyme": "Beweisgrund, Rechtfertigung",
+    "Antonyme": "Gegenargument",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Gegenargument",
+    "Erläuterung": "Begründung gegen eine These",
+    "Beispielsatz": "Sie brachte ein starkes Gegenargument vor.",
+    "Synonyme": "Einwand, Widerrede",
+    "Antonyme": "Argument",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Hypothese (allg.)",
+    "Erläuterung": "Annahme, die geprüft wird",
+    "Beispielsatz": "Die Hypothese wird durch Daten getestet.",
+    "Synonyme": "Vermutung, Annahme",
+    "Antonyme": "Beweis, Tatsache",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Evidenz",
+    "Erläuterung": "Nachweis/Beweislage",
+    "Beispielsatz": "Starke Evidenz spricht für Sport im Alltag.",
+    "Synonyme": "Beleg, Nachweis",
+    "Antonyme": "Zweifel",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Fakt",
+    "Erläuterung": "Nachweislich wahrer Umstand",
+    "Beispielsatz": "Es ist ein Fakt, dass Wasser bei 0 °C gefriert.",
+    "Synonyme": "Tatsache, Gegebenheit",
+    "Antonyme": "Fiktion",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Fiktion",
+    "Erläuterung": "Erfundenes, Ausgedachtes",
+    "Beispielsatz": "Der Film ist Fiktion, keine Doku.",
+    "Synonyme": "Erfindung, Fantasie",
+    "Antonyme": "Realität, Fakt",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Realismus (allg.)",
+    "Erläuterung": "Nüchterner Blick auf Wirklichkeit",
+    "Beispielsatz": "Sein Realismus half bei der Planung.",
+    "Synonyme": "Wirklichkeitssinn, Nüchternheit",
+    "Antonyme": "Illusion, Wunschdenken",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Utopie (allg.)",
+    "Erläuterung": "Idealbild einer perfekten Zukunft",
+    "Beispielsatz": "Eine Welt ohne Armut ist eine Utopie.",
+    "Synonyme": "Idealvorstellung, Wunschbild",
+    "Antonyme": "Dystopie",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Dystopie (allg.)",
+    "Erläuterung": "Negatives Zukunftsbild",
+    "Beispielsatz": "Der Roman schildert eine Dystopie mit Überwachung.",
+    "Synonyme": "Schreckensvision, Antiutopie",
+    "Antonyme": "Utopie",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Stereotyp",
+    "Erläuterung": "Übervereinfachtes Bild einer Gruppe",
+    "Beispielsatz": "Das Stereotyp vom „faulen Schüler“ greift zu kurz.",
+    "Synonyme": "Klischee, Vorurteil",
+    "Antonyme": "Individualität",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Vorurteil",
+    "Erläuterung": "Unbegründete negative Annahme",
+    "Beispielsatz": "Vorurteile führen zu unfairer Behandlung.",
+    "Synonyme": "Klischee, Voreingenommenheit",
+    "Antonyme": "Offenheit, Unvoreingenommenheit",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Diskriminierung",
+    "Erläuterung": "Ungleiche Behandlung ohne sachlichen Grund",
+    "Beispielsatz": "Diskriminierung ist gesetzlich verboten.",
+    "Synonyme": "Benachteiligung, Ausgrenzung",
+    "Antonyme": "Gleichbehandlung, Inklusion",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Toleranz",
+    "Erläuterung": "Respekt gegenüber anderen Lebensweisen",
+    "Beispielsatz": "Toleranz heißt, Unterschiede zu akzeptieren.",
+    "Synonyme": "Offenheit, Respekt",
+    "Antonyme": "Intoleranz",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Empathie",
+    "Erläuterung": "Fähigkeit, Gefühle anderer nachzuempfinden",
+    "Beispielsatz": "Empathie hilft beim Lösen von Konflikten.",
+    "Synonyme": "Mitgefühl, Einfühlung",
+    "Antonyme": "Gleichgültigkeit",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Sympathie",
+    "Erläuterung": "Spontane Zuneigung",
+    "Beispielsatz": "Er fand sofort Sympathie für die neue Kollegin.",
+    "Synonyme": "Zuneigung, Wohlwollen",
+    "Antonyme": "Antipathie",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Antipathie",
+    "Erläuterung": "Spontane Abneigung",
+    "Beispielsatz": "Zwischen beiden herrscht Antipathie.",
+    "Synonyme": "Abneigung, Abstoßung",
+    "Antonyme": "Sympathie",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Loyalität",
+    "Erläuterung": "Treue zu Personen/Werten",
+    "Beispielsatz": "Sie zeigte Loyalität gegenüber dem Team.",
+    "Synonyme": "Treue, Verbundenheit",
+    "Antonyme": "Untreue, Verrat",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Integrität",
+    "Erläuterung": "Ehrlichkeit und Unbestechlichkeit",
+    "Beispielsatz": "Integrität schafft Vertrauen.",
+    "Synonyme": "Rechtschaffenheit, Lauterkeit",
+    "Antonyme": "Korruption",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Korruption",
+    "Erläuterung": "Missbrauch von Macht zum eigenen Vorteil",
+    "Beispielsatz": "Korruption schwächt den Rechtsstaat.",
+    "Synonyme": "Bestechlichkeit, Amtsmissbrauch",
+    "Antonyme": "Integrität",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Manipulation",
+    "Erläuterung": "Verdeckte Beeinflussung anderer",
+    "Beispielsatz": "Werbung arbeitet oft mit Manipulation.",
+    "Synonyme": "Beeinflussung, Steuerung",
+    "Antonyme": "Aufklärung, Information",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Propaganda (allg.)",
+    "Erläuterung": "Einseitige Informationssteuerung",
+    "Beispielsatz": "Propaganda lenkt Meinungen gezielt.",
+    "Synonyme": "Meinungsmache, Agitation",
+    "Antonyme": "neutrale Information",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Satire (allg.)",
+    "Erläuterung": "Kritik mit Humor und Übertreibung",
+    "Beispielsatz": "Satire deckt Missstände witzig auf.",
+    "Synonyme": "Spott, Persiflage",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Ironie (allg.)",
+    "Erläuterung": "Gesagtes meint Gegenteil",
+    "Beispielsatz": "„Na super…“ nach einer Panne ist Ironie.",
+    "Synonyme": "Spott, feine Spitze",
+    "Antonyme": "Ernst",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Sarkasmus (allg.)",
+    "Erläuterung": "Bissige, verletzende Ironie",
+    "Beispielsatz": "„Ganz klug…“ sagt er sarkastisch.",
+    "Synonyme": "Hohn, Spott",
+    "Antonyme": "Ernst",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Metapher (allg.)",
+    "Erläuterung": "Bildhafter Ausdruck",
+    "Beispielsatz": "„Fels in der Brandung“ ist eine Metapher.",
+    "Synonyme": "Bild, Sinnbild",
+    "Antonyme": "wörtliche Rede",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Allegorie (allg.)",
+    "Erläuterung": "Bild für abstrakten Begriff",
+    "Beispielsatz": "Justitia mit Waage ist Allegorie der Gerechtigkeit.",
+    "Synonyme": "Sinnbild, Darstellung",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Klischee",
+    "Erläuterung": "Abgenutzte Vorstellung",
+    "Beispielsatz": "Das Klischee verfälscht die Wirklichkeit.",
+    "Synonyme": "Stereotyp, Gemeinplatz",
+    "Antonyme": "Originalität",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Parodie (allg.)",
+    "Erläuterung": "Lustige Nachahmung",
+    "Beispielsatz": "Die Parodie stellt die Schwächen des Originals bloß.",
+    "Synonyme": "Persiflage, Nachahmung",
+    "Antonyme": "Original",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Mem",
+    "Erläuterung": "Sich schnell verbreitender Internetwitz",
+    "Beispielsatz": "Das Mem ging viral.",
+    "Synonyme": "Internetwitz, Running Gag",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Algorithmus",
+    "Erläuterung": "Schrittfolge zur Problemlösung",
+    "Beispielsatz": "Die Suche sortiert Treffer per Algorithmus.",
+    "Synonyme": "Rechenvorschrift, Verfahren",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Datenbank",
+    "Erläuterung": "Geordnete Datensammlung",
+    "Beispielsatz": "Kundendaten liegen in einer Datenbank.",
+    "Synonyme": "Informationsspeicher, Datenbestand",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Cloud",
+    "Erläuterung": "Online‑Speicher/‑Dienste im Internet",
+    "Beispielsatz": "Fotos werden automatisch in die Cloud gesichert.",
+    "Synonyme": "Onlinespeicher, Webdienst",
+    "Antonyme": "lokaler Speicher",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "App",
+    "Erläuterung": "Programm für Smartphone/Tablet",
+    "Beispielsatz": "Die App erinnert mich ans Trinken.",
+    "Synonyme": "Anwendung, Mobile‑Programm",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Social Media",
+    "Erläuterung": "Digitale Plattformen zum Teilen von Inhalten",
+    "Beispielsatz": "Social Media verbindet Freunde weltweit.",
+    "Synonyme": "soziale Netzwerke, Netzplattformen",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Streaming",
+    "Erläuterung": "Medienübertragung in Echtzeit",
+    "Beispielsatz": "Filme schauen viele per Streaming.",
+    "Synonyme": "Onlineübertragung, Live‑Übertragung",
+    "Antonyme": "Download",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Fake News",
+    "Erläuterung": "Absichtlich verbreitete Falschmeldungen",
+    "Beispielsatz": "Die Politikerin wurde Opfer von Fake News.",
+    "Synonyme": "Falschinformation, Desinformation",
+    "Antonyme": "Fakten, Wahrheit",
+    "Thema": "Alltag & Medien"
+  },
+  {
+    "Fremdwort": "Cybermobbing",
+    "Erläuterung": "Belästigung über digitale Kanäle",
+    "Beispielsatz": "Cybermobbing belastet Betroffene stark.",
+    "Synonyme": "Online‑Belästigung, digitale Schikane",
+    "Antonyme": "–",
+    "Thema": "Alltag & Medien"
+  }
+]
