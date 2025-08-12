@@ -64,18 +64,21 @@
     .card.flipped{transform:rotateY(180deg)}
     .card-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;padding:2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--card);border:2px solid rgba(255,255,255,.08)}
 
-    /* >>> Kontraststarke Rückseite + Scrim */
-    .card-back{
-      position:relative;
-      background: linear-gradient(135deg, #3d2e86 0%, #2a2360 100%);
-      color:#fff;
-    }
-    .card-back::before{
-      content:""; position:absolute; inset:0; border-radius:20px;
-      background: linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.55));
-      pointer-events:none;
-    }
-    .card-back > *{ position:relative; z-index:1 }
+   /* >>> Kontraststarke Rückseite + Scrim (Fix: wieder sichtbar) */
+.card-back{
+  position: relative;
+  transform: rotateY(180deg); /* <- WICHTIG: Rückseite zur Kamera drehen */
+  background: linear-gradient(135deg, #3d2e86 0%, #2a2360 100%);
+  color: #fff;
+}
+.card-back::before{
+  content:"";
+  position:absolute; inset:0;
+  border-radius:20px;
+  background: linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.55));
+  pointer-events:none;
+}
+.card-back > *{ position: relative; z-index: 1; }
 
     .word{font-size:clamp(1.6rem,5vw,2.6rem);font-weight:700;margin-bottom:1rem}
     .definition{font-size:clamp(1.05rem,3.2vw,1.25rem);margin-bottom:.75rem}
