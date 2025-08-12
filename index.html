@@ -11,7 +11,6 @@
   <!-- iOS Vollbild -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <!-- (Optional) iOS Icon: icons/icon-180.png -->
   <link rel="apple-touch-icon" href="icons/icon-180.png" />
 
   <!-- PWA Manifest -->
@@ -21,41 +20,74 @@
 
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    :root{--bg:#0f1123;--card:#16213e;--text:#ffffff;--muted:#a8a8a8;--primary:#4A90E2;--secondary:#50E3C2;--safe-top:env(safe-area-inset-top);--safe-bottom:env(safe-area-inset-bottom)}
-    @media (prefers-color-scheme: light){
-      :root{--bg:#ffffff;--card:#f3f6fb;--text:#0a0a0a;--muted:#5a5a5a;--primary:#184e9e;--secondary:#00796b}
+    :root{
+      --bg:#0f1123; --card:#16213e; --text:#ffffff; --muted:#a8a8a8;
+      --primary:#4A90E2; --secondary:#50E3C2;
+      --safe-top:env(safe-area-inset-top); --safe-bottom:env(safe-area-inset-bottom)
     }
-    .high-contrast{--bg:#0a0a0a;--card:#0f0f11;--text:#ffffff;--muted:#d0d0d0;--primary:#ffffff;--secondary:#d0d0d0}
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#ffffff; --card:#f3f6fb; --text:#0a0a0a; --muted:#5a5a5a;
+        --primary:#184e9e; --secondary:#00796b;
+      }
+    }
+    .high-contrast{ --bg:#0a0a0a; --card:#0f0f11; --text:#ffffff; --muted:#d0d0d0; --primary:#ffffff; --secondary:#d0d0d0 }
 
-    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:linear-gradient(135deg,var(--bg) 0%, rgba(15,17,35,0.96) 100%);color:var(--text);min-height:100vh;padding-bottom:var(--safe-bottom)}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      background:linear-gradient(135deg,var(--bg) 0%, rgba(15,17,35,0.96) 100%);
+      color:var(--text); min-height:100vh; padding-bottom:var(--safe-bottom)
+    }
+
     .header{background:rgba(26,26,46,.95);padding:calc(1rem + var(--safe-top)) 1rem 1rem;box-shadow:0 2px 20px rgba(0,0,0,.3)}
     .header-content{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
     h1{font-size:clamp(1.2rem,3.2vw,1.6rem);background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .stats{display:flex;gap:1.2rem}.stat-item{text-align:center}.stat-value{font-size:clamp(1rem,2.6vw,1.3rem);font-weight:700;color:var(--secondary)}.stat-label{font-size:.75rem;color:var(--muted)}
+    .stats{display:flex;gap:1.2rem}.stat-item{text-align:center}
+    .stat-value{font-size:clamp(1rem,2.6vw,1.3rem);font-weight:700;color:var(--secondary)}
+    .stat-label{font-size:.75rem;color:var(--muted)}
+
     .container{max-width:1200px;margin:2rem auto;padding:0 1rem}
     .mode-selector{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
     .mode-card{background:var(--card);border-radius:15px;padding:1.6rem;cursor:pointer;transition:.3s;border:2px solid transparent}
     .mode-card:hover{transform:translateY(-4px);border-color:var(--primary);box-shadow:0 10px 30px rgba(74,144,226,.3)}
     .mode-card h3{font-size:clamp(1.1rem,3vw,1.4rem);margin-bottom:.4rem}.mode-card p{color:var(--muted)}
+
     .lesson-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:1rem;margin:2rem 0}
     .lesson-btn{padding:1rem;background:var(--card);border:2px solid transparent;border-radius:10px;color:var(--text);cursor:pointer;transition:.25s;width:100%}
     .lesson-btn:hover{border-color:var(--primary);transform:scale(1.05)}
     .lesson-btn.completed{border-color:var(--secondary);background:rgba(80,227,194,.12)}
+
     .card-container{perspective:1000px;height:400px;margin:2rem 0}
     .card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .6s;cursor:pointer;will-change:transform}
     .card.flipped{transform:rotateY(180deg)}
     .card-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;padding:2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--card);border:2px solid rgba(255,255,255,.08)}
-    .card-back{transform:rotateY(180deg);background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
+
+    /* >>> Kontraststarke Rückseite */
+    .card-back{
+      position:relative;
+      background: linear-gradient(135deg, #3d2e86 0%, #2a2360 100%);
+      color:#fff;
+    }
+    .card-back::before{
+      content:""; position:absolute; inset:0; border-radius:20px;
+      background: linear-gradient(135deg, rgba(0,0,0,.35), rgba(0,0,0,.45));
+      pointer-events:none;
+    }
+    .card-back > *{ position:relative; z-index:1 }
+
     .word{font-size:clamp(1.6rem,5vw,2.6rem);font-weight:700;margin-bottom:1rem}
     .definition{font-size:clamp(1.05rem,3.2vw,1.25rem);margin-bottom:.75rem}
-    .example{font-style:italic;background:rgba(0,0,0,.18);padding:1rem;border-radius:10px;margin:.75rem 0}
+    .example{font-style:italic;background:rgba(0,0,0,.45);color:#fff;padding:1rem;border-radius:10px;margin:.75rem 0}
     .meta{opacity:.9;color:var(--muted);font-size:.95rem;margin-top:.25rem}
+
     .nav-buttons{display:flex;justify-content:center;gap:1rem;margin:2rem 0;flex-wrap:wrap}
     .btn{padding:.8rem 1.5rem;background:var(--primary);color:#fff;border:none;border-radius:25px;cursor:pointer;font-size:1rem;transition:.25s}
     .btn:hover{transform:scale(1.05);box-shadow:0 5px 15px rgba(74,144,226,.4)}
     .btn:disabled{opacity:.5;cursor:not-allowed}
+
     .progress-bar{width:100%;height:28px;background:rgba(255,255,255,.12);border-radius:15px;overflow:hidden;margin:1rem 0}
     .progress-fill{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));transition:width .5s;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+
     .quiz-question{background:var(--card);padding:2rem;border-radius:15px;margin:2rem 0}
     .quiz-options{display:grid;gap:1rem;margin:1.2rem 0}
     .quiz-option{padding:1rem;background:rgba(255,255,255,.06);border:2px solid transparent;border-radius:10px;cursor:pointer;transition:.25s;text-align:left}
@@ -63,13 +95,32 @@
     .quiz-option.correct{background:rgba(126,211,33,.25);border-color:#7ED321}
     .quiz-option.incorrect{background:rgba(208,2,27,.25);border-color:#D0021B}
     .quiz-option.disabled{cursor:not-allowed}
+
     .results{background:var(--card);padding:2rem;border-radius:15px;text-align:center}
-    .score{font-size:clamp(2rem,6vw,3rem);font-weight:700;margin:1rem 0;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .score{font-size:clamp(2rem,6vw,3rem);font-weight:700;margin:1rem 0;
+      background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
     .hidden{display:none !important}
     .mode-card:focus-visible,.card:focus-visible,.btn:focus-visible,.lesson-btn:focus-visible,.quiz-option:focus-visible{outline:2px solid var(--secondary);outline-offset:4px}
     @media (prefers-reduced-motion: reduce){.card,.btn,.mode-card,.lesson-btn{transition:none;transform:none}}
-    #iosInstallHint{position:fixed;left:1rem;right:1rem;bottom:calc(1rem + var(--safe-bottom));background:rgba(22,33,62,.95);border:1px solid rgba(255,255,255,.12);color:#fff;padding:.8rem 1rem;border-radius:12px;z-index:1000;text-align:center}
+
+    /* Install-Hinweis: klein, schließbar, blockiert nichts */
+    #iosInstallHint{
+      position:fixed; left:1rem; right:1rem;
+      bottom:calc(1rem + var(--safe-bottom));
+      background:rgba(10,17,40,.95);
+      border:1px solid rgba(255,255,255,.12);
+      color:#fff; padding:.7rem 2.5rem .7rem 1rem;
+      border-radius:12px; z-index:1000; text-align:center;
+      font-size:.95rem; box-shadow:0 6px 24px rgba(0,0,0,.35)
+    }
     #iosInstallHint.hidden{display:none}
+    #iosInstallHint #closeInstallHint{
+      position:absolute; top:.15rem; right:.35rem;
+      width:2rem; height:2rem; line-height:2rem;
+      background:transparent; border:0; color:#fff; font-size:1.4rem; cursor:pointer
+    }
+    body.has-install-hint{ padding-bottom:84px; } /* unten Luft, damit nix verdeckt wird */
   </style>
 </head>
 <body>
@@ -124,7 +175,7 @@
       </div>
     </div>
 
-    <!-- Quiz-Modus -->
+    <!-- Quiz -->
     <div id="quizMode" class="hidden">
       <h2 id="quizTitle">Quiz</h2>
       <div id="quizContent" aria-live="polite"></div>
@@ -144,35 +195,37 @@
     </div>
   </div>
 
-  <div id="iosInstallHint" class="hidden">Tippe auf <span>Teilen</span> → <span>„Zum Home-Bildschirm“</span>, um die App zu installieren.</div>
+  <!-- Install-Hinweis: schließbar + auto-hide -->
+  <div id="iosInstallHint" class="hidden" role="dialog" aria-live="polite">
+    Tippe auf <span>Teilen</span> → <span>„Zum Home-Bildschirm“</span>, um die App zu installieren.
+    <button id="closeInstallHint" type="button" aria-label="Hinweis schließen">×</button>
+  </div>
 
   <script>
-    /* ---------- Konfiguration ---------- */
     const LESSON_SIZE = 12;
 
-    /* ---------- Daten laden (JSON) ---------- */
+    /* Daten laden */
     let wordsDatabase = [];
     let dataReady = false;
-
     async function loadWords(){
       try{
-        const res = await fetch('fremdwoerter_klasse11_komplett.json', { cache: 'no-store' });
-        if (!res.ok) throw new Error('JSON nicht gefunden');
+        const res = await fetch('fremdwoerter_klasse11_komplett.json', { cache:'no-store' });
+        if(!res.ok) throw new Error('JSON nicht gefunden');
         wordsDatabase = await res.json();
       }catch(e){
-        console.warn('Wörterliste nicht gefunden – nutze Mini-Fallback.', e);
+        console.warn('Wörterliste nicht gefunden – Mini-Fallback aktiv.', e);
         wordsDatabase = [
           {"Fremdwort":"Allegorie","Erläuterung":"Bildhafte Darstellung eines abstrakten Begriffs","Beispielsatz":"Die Figur mit Waage steht als Allegorie für Gerechtigkeit.","Thema":"Sprache & Literatur"},
           {"Fremdwort":"Metapher","Erläuterung":"Übertragener, bildhafter Ausdruck","Beispielsatz":"„Fels in der Brandung“ ist eine Metapher.","Thema":"Sprache & Literatur"}
         ];
-        document.getElementById('loading').textContent = 'Hinweis: Bitte die Datei fremdwoerter_klasse11_komplett.json neben index.html anlegen.';
+        document.getElementById('loading').textContent = 'Hinweis: Lege die Datei fremdwoerter_klasse11_komplett.json neben index.html ab.';
       }
       dataReady = true;
       document.getElementById('loading').classList.add('hidden');
       updateStats();
     }
 
-    /* ---------- State & Helpers ---------- */
+    /* State & Helpers */
     let currentLesson=[], currentCardIndex=0, currentQuiz=[], currentQuizIndex=0, score=0;
     let learned=JSON.parse(localStorage.getItem('learned')||'[]');
     let completedLessons=JSON.parse(localStorage.getItem('completedLessons')||'[]');
@@ -181,7 +234,6 @@
     const $=s=>document.querySelector(s);
     const el=(t,p={},...c)=>{const e=document.createElement(t);Object.assign(e,p);c.forEach(x=>e.appendChild(typeof x==='string'?document.createTextNode(x):x));return e;}
     const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-
     function setView(ids=[]){['mainMenu','learningMode','quizMode','progressView'].forEach(id=>document.getElementById(id).classList.toggle('hidden',!ids.includes(id)));}
 
     function updateStats(){
@@ -193,59 +245,44 @@
       $('#streakCount').textContent=String(streak);
     }
 
-    /* ---------- Lernen: Lektionenliste ---------- */
+    /* Lernen: Lektionenliste */
     function startLearning(){
       if(!dataReady){ alert('Wörterliste lädt noch …'); return; }
       setView(['learningMode']);
       document.getElementById('cardView').classList.add('hidden');
       generateLessons();
     }
-
     function generateLessons(){
-      const grid = document.getElementById('lessonGrid');
-      grid.textContent = '';
-
+      const grid = document.getElementById('lessonGrid'); grid.textContent='';
       const lessonCount = Math.ceil(wordsDatabase.length / LESSON_SIZE);
       for (let i = 0; i < lessonCount; i++){
-        const start = i * LESSON_SIZE;
-        const end   = Math.min(start + LESSON_SIZE, wordsDatabase.length);
-        const btn   = document.createElement('button');
-
-        btn.className = 'lesson-btn';
-        btn.type = 'button';
+        const start = i * LESSON_SIZE, end = Math.min(start + LESSON_SIZE, wordsDatabase.length);
+        const btn = document.createElement('button');
+        btn.className = 'lesson-btn'; btn.type = 'button';
         if (completedLessons.includes(i)) btn.classList.add('completed');
         btn.textContent = `Lektion ${i+1} (${end - start})`;
         btn.addEventListener('click', () => startLesson(i));
         grid.appendChild(btn);
       }
     }
-
     function startLesson(lessonIndex){
-      const start = lessonIndex * LESSON_SIZE;
-      const end   = Math.min(start + LESSON_SIZE, wordsDatabase.length);
-
-      currentLesson      = wordsDatabase.slice(start, end);
-      currentCardIndex   = 0;
-      currentLessonIndex = lessonIndex;
-
-      document.getElementById('cardView').classList.remove('hidden');
-      showCard();
+      const start = lessonIndex * LESSON_SIZE, end = Math.min(start + LESSON_SIZE, wordsDatabase.length);
+      currentLesson = wordsDatabase.slice(start, end);
+      currentCardIndex = 0; currentLessonIndex = lessonIndex;
+      document.getElementById('cardView').classList.remove('hidden'); showCard();
     }
-
     function showCard(){
       const w=currentLesson[currentCardIndex];
-      $('#wordFront').textContent=w?.Fremdwort || '';
-      $('#definition').textContent=w?.Erläuterung || '';
-      $('#example').textContent=w?.Beispielsatz || '';
-      const bits=[];
-      if(w?.Synonyme) bits.push(`Synonyme: ${w.Synonyme}`);
+      $('#wordFront').textContent=w?.Fremdwort||'';
+      $('#definition').textContent=w?.Erläuterung||'';
+      $('#example').textContent=w?.Beispielsatz||'';
+      const bits=[]; if(w?.Synonyme) bits.push(`Synonyme: ${w.Synonyme}`);
       if(w?.Antonyme && w.Antonyme!=='–') bits.push(`Antonyme: ${w.Antonyme}`);
       if(w?.Thema) bits.push(`Thema: ${w.Thema}`);
       $('#meta').textContent = bits.join(' · ');
       $('#flashcard').classList.remove('flipped');
       updateProgress(); updateNavButtons();
     }
-
     function nextCard(){ if(currentCardIndex<currentLesson.length-1){ currentCardIndex++; showCard(); } }
     function previousCard(){ if(currentCardIndex>0){ currentCardIndex--; showCard(); } }
     function markLearned(){
@@ -264,7 +301,7 @@
     function updateProgress(){ const p=Math.round((currentCardIndex+1)/currentLesson.length*100)||0; const bar=$('#progressBar'); bar.style.width=p+'%'; bar.textContent=p+'%'; }
     function updateNavButtons(){ $('#prevBtn').disabled=currentCardIndex===0; $('#nextBtn').disabled=currentCardIndex===currentLesson.length-1; }
 
-    /* ---------- Quiz ---------- */
+    /* Quiz */
     function startQuiz(){
       if(!dataReady){ alert('Wörterliste lädt noch …'); return; }
       setView(['quizMode']); $('#quizTitle').textContent='Quiz';
@@ -295,7 +332,8 @@
       box.appendChild(wrap); c.appendChild(box);
     }
     function checkAnswer(sel){
-      const q=currentQuiz[currentQuizIndex]; document.querySelectorAll('.quiz-option').forEach((o,i)=>{ o.classList.add('disabled'); if(i===q.correctIndex) o.classList.add('correct'); if(i===sel && sel!==q.correctIndex) o.classList.add('incorrect'); });
+      const q=currentQuiz[currentQuizIndex];
+      document.querySelectorAll('.quiz-option').forEach((o,i)=>{ o.classList.add('disabled'); if(i===q.correctIndex) o.classList.add('correct'); if(i===sel && sel!==q.correctIndex) o.classList.add('incorrect'); });
       if(sel===q.correctIndex) score++; setTimeout(()=>{ currentQuizIndex++; showQuizQuestion(); }, 1200);
     }
     function showQuizResults(){
@@ -304,27 +342,47 @@
       c.appendChild(w);
     }
 
-    /* ---------- Kontrast-Guard (WCAG) ---------- */
-    function relLum([r,g,b]){ const srgb=[r,g,b].map(v=>{v/=255; return v<=0.03928? v/12.92 : Math.pow((v+0.055)/1.055,2.4);}); return 0.2126*srgb[0]+0.7152*srgb[1]+0.0722*srgb[2]; }
-    function hexToRgb(hex){ const h=hex.replace('#',''); return [parseInt(h.substr(0,2),16),parseInt(h.substr(2,2),16),parseInt(h.substr(4,2),16)]; }
-    function contrastRatio(fgHex,bgHex){ const L1=relLum(hexToRgb(fgHex)), L2=relLum(hexToRgb(bgHex)); const lighter=Math.max(L1,L2), darker=Math.min(L1,L2); return (lighter+0.05)/(darker+0.05); }
+    /* Kontrast-Wächter (WCAG) */
+    function relLum([r,g,b]){ const s=[r,g,b].map(v=>{v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4)}); return 0.2126*s[0]+0.7152*s[1]+0.0722*s[2] }
+    function hexToRgb(hex){ const h=hex.replace('#',''); return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)] }
+    function contrastRatio(fg,bg){ const L1=relLum(hexToRgb(fg)), L2=relLum(hexToRgb(bg)); const hi=Math.max(L1,L2), lo=Math.min(L1,L2); return (hi+0.05)/(lo+0.05) }
     function applyContrastGuard(){
-      const cs = getComputedStyle(document.documentElement);
-      const bg = cs.getPropertyValue('--bg').trim();
-      const text = cs.getPropertyValue('--text').trim();
+      const cs=getComputedStyle(document.documentElement);
+      const bg=cs.getPropertyValue('--bg').trim(), text=cs.getPropertyValue('--text').trim();
       if(!bg.startsWith('#')||!text.startsWith('#')) return;
-      const ratio = contrastRatio(text, bg);
-      if (ratio < 4.5) document.documentElement.classList.add('high-contrast');
-      else document.documentElement.classList.remove('high-contrast');
+      const ratio=contrastRatio(text,bg);
+      if(ratio<4.5) document.documentElement.classList.add('high-contrast'); else document.documentElement.classList.remove('high-contrast');
     }
 
-    /* ---------- iOS-Hinweis + SW + UI ---------- */
+    /* Install-Hinweis: nur wenn nötig, schließbar, auto-hide */
     function maybeShowIosInstallHint(){
       const isiOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
       const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
-      if(isiOS && !standalone) document.getElementById('iosInstallHint').classList.remove('hidden');
+      if(!isiOS || standalone) return;
+
+      const until=Number(localStorage.getItem('installHintDismissedUntil')||0);
+      if(Date.now()<until) return;
+
+      const hint=document.getElementById('iosInstallHint');
+      const closeBtn=document.getElementById('closeInstallHint');
+      if(!hint||!closeBtn) return;
+
+      hint.classList.remove('hidden');
+      document.body.classList.add('has-install-hint');
+
+      const hide=(days=30)=>{
+        hint.classList.add('hidden');
+        document.body.classList.remove('has-install-hint');
+        localStorage.setItem('installHintDismissedUntil', String(Date.now() + days*864e5));
+      };
+
+      closeBtn.addEventListener('click',()=>hide(30));
+      const timer=setTimeout(()=>hide(30),8000);
+      window.addEventListener('scroll',()=>{hide(30); clearTimeout(timer);},{once:true});
     }
-    function registerSW(){ if('serviceWorker' in navigator){ window.addEventListener('load',()=> navigator.serviceWorker.register('sw.js').catch(console.error)); } }
+
+    /* SW + UI */
+    function registerSW(){ if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(console.error)); } }
     function wireUI(){
       document.getElementById('modeLearn').onclick=startLearning;
       document.getElementById('modeQuiz').onclick=startQuiz;
@@ -340,7 +398,6 @@
       document.getElementById('resetProgressBtn').onclick=()=>{ if(confirm('Fortschritt wirklich zurücksetzen?')){ localStorage.clear(); learned=[]; completedLessons=[]; updateStats(); setView(['mainMenu']); } };
     }
 
-    /* ---------- Boot ---------- */
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', applyContrastGuard);
     window.addEventListener('DOMContentLoaded', ()=>{
       loadWords();
