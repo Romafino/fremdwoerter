@@ -4,18 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-  <!-- App-Farben / Browser-Chrome -->
   <meta name="theme-color" content="#4A90E2" />
   <meta name="color-scheme" content="dark light" />
 
   <!-- iOS Vollbild -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="apple-touch-icon" href="icons/icon-180.png" />
 
-  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.webmanifest" />
-
   <title>Fremdwörter Trainer - Klasse 11</title>
 
   <style>
@@ -59,10 +55,16 @@
 
     .card-container{perspective:1000px;height:400px;margin:2rem 0}
     .card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .6s;cursor:pointer;will-change:transform}
+
+    /* iOS-robust: nur EINE Seite sichtbar halten */
+    .card .card-front, .card .card-back{ transition: opacity .3s ease; }
+    .card:not(.flipped) .card-back{ opacity:0; visibility:hidden; pointer-events:none; }
+    .card.flipped .card-front{ opacity:0; visibility:hidden; pointer-events:none; }
+
     .card.flipped{transform:rotateY(180deg)}
     .card-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;padding:2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--card);border:2px solid rgba(255,255,255,.08)}
 
-    /* >>> Kontraststarke Rückseite */
+    /* >>> Kontraststarke Rückseite + Scrim */
     .card-back{
       position:relative;
       background: linear-gradient(135deg, #3d2e86 0%, #2a2360 100%);
@@ -70,15 +72,18 @@
     }
     .card-back::before{
       content:""; position:absolute; inset:0; border-radius:20px;
-      background: linear-gradient(135deg, rgba(0,0,0,.35), rgba(0,0,0,.45));
+      background: linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.55));
       pointer-events:none;
     }
     .card-back > *{ position:relative; z-index:1 }
 
     .word{font-size:clamp(1.6rem,5vw,2.6rem);font-weight:700;margin-bottom:1rem}
     .definition{font-size:clamp(1.05rem,3.2vw,1.25rem);margin-bottom:.75rem}
-    .example{font-style:italic;background:rgba(0,0,0,.45);color:#fff;padding:1rem;border-radius:10px;margin:.75rem 0}
-    .meta{opacity:.9;color:var(--muted);font-size:.95rem;margin-top:.25rem}
+    .example{font-style:italic;background:rgba(0,0,0,.55);color:#fff;padding:1rem;border-radius:10px;margin:.75rem 0}
+
+    /* Synonyme/Meta deutlich heller */
+    .meta{font-size:.95rem;margin-top:.25rem}
+    .card-back .meta{ color:#eef2ff; opacity:1; font-weight:600; }
 
     .nav-buttons{display:flex;justify-content:center;gap:1rem;margin:2rem 0;flex-wrap:wrap}
     .btn{padding:.8rem 1.5rem;background:var(--primary);color:#fff;border:none;border-radius:25px;cursor:pointer;font-size:1rem;transition:.25s}
@@ -104,7 +109,7 @@
     .mode-card:focus-visible,.card:focus-visible,.btn:focus-visible,.lesson-btn:focus-visible,.quiz-option:focus-visible{outline:2px solid var(--secondary);outline-offset:4px}
     @media (prefers-reduced-motion: reduce){.card,.btn,.mode-card,.lesson-btn{transition:none;transform:none}}
 
-    /* Install-Hinweis: klein, schließbar, blockiert nichts */
+    /* Install-Hinweis: klein, schließbar, auto-hide, blockiert nichts */
     #iosInstallHint{
       position:fixed; left:1rem; right:1rem;
       bottom:calc(1rem + var(--safe-bottom));
@@ -154,10 +159,12 @@
       <div id="cardView" class="hidden" aria-live="polite">
         <div class="card-container">
           <div class="card" id="flashcard" role="button" tabindex="0">
+            <!-- Vorderseite: der BEGRIFF -->
             <div class="card-face card-front">
               <div class="word" id="wordFront"></div>
               <p style="margin-top:2rem;color:var(--muted)">Tippe oder drücke Enter/Leertaste zum Umdrehen</p>
             </div>
+            <!-- Rückseite: Erklärung -->
             <div class="card-face card-back">
               <div class="definition" id="definition"></div>
               <div class="example" id="example"></div>
@@ -271,18 +278,25 @@
       currentCardIndex = 0; currentLessonIndex = lessonIndex;
       document.getElementById('cardView').classList.remove('hidden'); showCard();
     }
+
     function showCard(){
       const w=currentLesson[currentCardIndex];
+      // Vorderseite: der Begriff
       $('#wordFront').textContent=w?.Fremdwort||'';
+      // Rückseite: Erklärung/Beispiele/Synonyme
       $('#definition').textContent=w?.Erläuterung||'';
       $('#example').textContent=w?.Beispielsatz||'';
       const bits=[]; if(w?.Synonyme) bits.push(`Synonyme: ${w.Synonyme}`);
       if(w?.Antonyme && w.Antonyme!=='–') bits.push(`Antonyme: ${w.Antonyme}`);
       if(w?.Thema) bits.push(`Thema: ${w.Thema}`);
       $('#meta').textContent = bits.join(' · ');
-      $('#flashcard').classList.remove('flipped');
+
+      // Immer mit Vorderseite starten
+      document.getElementById('flashcard').classList.remove('flipped');
+
       updateProgress(); updateNavButtons();
     }
+
     function nextCard(){ if(currentCardIndex<currentLesson.length-1){ currentCardIndex++; showCard(); } }
     function previousCard(){ if(currentCardIndex>0){ currentCardIndex--; showCard(); } }
     function markLearned(){
@@ -342,7 +356,7 @@
       c.appendChild(w);
     }
 
-    /* Kontrast-Wächter (WCAG) */
+    /* Kontrast-Wächter (falls System-Palette zu hell wäre) */
     function relLum([r,g,b]){ const s=[r,g,b].map(v=>{v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4)}); return 0.2126*s[0]+0.7152*s[1]+0.0722*s[2] }
     function hexToRgb(hex){ const h=hex.replace('#',''); return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)] }
     function contrastRatio(fg,bg){ const L1=relLum(hexToRgb(fg)), L2=relLum(hexToRgb(bg)); const hi=Math.max(L1,L2), lo=Math.min(L1,L2); return (hi+0.05)/(lo+0.05) }
@@ -381,7 +395,6 @@
       window.addEventListener('scroll',()=>{hide(30); clearTimeout(timer);},{once:true});
     }
 
-    /* SW + UI */
     function registerSW(){ if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(console.error)); } }
     function wireUI(){
       document.getElementById('modeLearn').onclick=startLearning;
