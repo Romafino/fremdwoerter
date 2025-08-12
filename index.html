@@ -3,51 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- App-Farben / Browser-Chrome -->
   <meta name="theme-color" content="#4A90E2" />
+  <meta name="color-scheme" content="dark light" />
+
   <!-- iOS Vollbild -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <!-- Manifest (relativ, damit es auf GitHub/Netlify klappt) -->
+  <!-- (Optional) iOS Icon: icons/icon-180.png -->
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+
+  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.webmanifest" />
+
   <title>Fremdwörter Trainer - Klasse 11</title>
+
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    :root{--primary:#4A90E2;--secondary:#50E3C2;--success:#7ED321;--error:#D0021B;--dark-bg:#1a1a2e;--card-bg:#16213e;--text-primary:#fff;--text-secondary:#a8a8a8;--safe-top:env(safe-area-inset-top);--safe-bottom:env(safe-area-inset-bottom)}
-    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#0f1123 100%);color:var(--text-primary);min-height:100vh;padding-bottom:var(--safe-bottom)}
+    :root{--bg:#0f1123;--card:#16213e;--text:#ffffff;--muted:#a8a8a8;--primary:#4A90E2;--secondary:#50E3C2;--safe-top:env(safe-area-inset-top);--safe-bottom:env(safe-area-inset-bottom)}
+    @media (prefers-color-scheme: light){
+      :root{--bg:#ffffff;--card:#f3f6fb;--text:#0a0a0a;--muted:#5a5a5a;--primary:#184e9e;--secondary:#00796b}
+    }
+    .high-contrast{--bg:#0a0a0a;--card:#0f0f11;--text:#ffffff;--muted:#d0d0d0;--primary:#ffffff;--secondary:#d0d0d0}
+
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:linear-gradient(135deg,var(--bg) 0%, rgba(15,17,35,0.96) 100%);color:var(--text);min-height:100vh;padding-bottom:var(--safe-bottom)}
     .header{background:rgba(26,26,46,.95);padding:calc(1rem + var(--safe-top)) 1rem 1rem;box-shadow:0 2px 20px rgba(0,0,0,.3)}
     .header-content{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-    h1{font-size:1.5rem;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .stats{display:flex;gap:1.5rem}.stat-item{text-align:center}.stat-value{font-size:1.3rem;font-weight:700;color:var(--secondary)}.stat-label{font-size:.7rem;color:var(--text-secondary)}
+    h1{font-size:clamp(1.2rem,3.2vw,1.6rem);background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .stats{display:flex;gap:1.2rem}.stat-item{text-align:center}.stat-value{font-size:clamp(1rem,2.6vw,1.3rem);font-weight:700;color:var(--secondary)}.stat-label{font-size:.75rem;color:var(--muted)}
     .container{max-width:1200px;margin:2rem auto;padding:0 1rem}
-    .mode-selector{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-    .mode-card{background:var(--card-bg);border-radius:15px;padding:2rem;cursor:pointer;transition:.3s;border:2px solid transparent}
-    .mode-card:hover{transform:translateY(-5px);border-color:var(--primary);box-shadow:0 10px 30px rgba(74,144,226,.3)}
+    .mode-selector{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
+    .mode-card{background:var(--card);border-radius:15px;padding:1.6rem;cursor:pointer;transition:.3s;border:2px solid transparent}
+    .mode-card:hover{transform:translateY(-4px);border-color:var(--primary);box-shadow:0 10px 30px rgba(74,144,226,.3)}
+    .mode-card h3{font-size:clamp(1.1rem,3vw,1.4rem);margin-bottom:.4rem}.mode-card p{color:var(--muted)}
     .lesson-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:1rem;margin:2rem 0}
-    .lesson-btn{padding:1rem;background:var(--card-bg);border:2px solid transparent;border-radius:10px;color:#fff;cursor:pointer;transition:.3s;width:100%}
-    .lesson-btn:hover{border-color:var(--primary);transform:scale(1.05)}.lesson-btn.completed{border-color:var(--success);background:rgba(126,211,33,.1)}
+    .lesson-btn{padding:1rem;background:var(--card);border:2px solid transparent;border-radius:10px;color:var(--text);cursor:pointer;transition:.25s;width:100%}
+    .lesson-btn:hover{border-color:var(--primary);transform:scale(1.05)}
+    .lesson-btn.completed{border-color:var(--secondary);background:rgba(80,227,194,.12)}
     .card-container{perspective:1000px;height:400px;margin:2rem 0}
     .card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .6s;cursor:pointer;will-change:transform}
     .card.flipped{transform:rotateY(180deg)}
-    .card-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;padding:2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--card-bg);border:2px solid rgba(255,255,255,.1)}
+    .card-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;padding:2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--card);border:2px solid rgba(255,255,255,.08)}
     .card-back{transform:rotateY(180deg);background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
-    .word{font-size:2.5rem;font-weight:700;margin-bottom:1rem}.definition{font-size:1.2rem;margin-bottom:1rem}.example{font-style:italic;background:rgba(0,0,0,.2);padding:1rem;border-radius:10px;margin:1rem 0}
+    .word{font-size:clamp(1.6rem,5vw,2.6rem);font-weight:700;margin-bottom:1rem}
+    .definition{font-size:clamp(1.05rem,3.2vw,1.25rem);margin-bottom:.75rem}
+    .example{font-style:italic;background:rgba(0,0,0,.18);padding:1rem;border-radius:10px;margin:.75rem 0}
+    .meta{opacity:.9;color:var(--muted);font-size:.95rem;margin-top:.25rem}
     .nav-buttons{display:flex;justify-content:center;gap:1rem;margin:2rem 0;flex-wrap:wrap}
-    .btn{padding:.8rem 1.5rem;background:var(--primary);color:#fff;border:none;border-radius:25px;cursor:pointer;font-size:1rem;transition:.3s}
-    .btn:hover{transform:scale(1.05);box-shadow:0 5px 15px rgba(74,144,226,.4)}.btn:disabled{opacity:.5;cursor:not-allowed}
-    .progress-bar{width:100%;height:30px;background:rgba(255,255,255,.1);border-radius:15px;overflow:hidden;margin:1rem 0}
+    .btn{padding:.8rem 1.5rem;background:var(--primary);color:#fff;border:none;border-radius:25px;cursor:pointer;font-size:1rem;transition:.25s}
+    .btn:hover{transform:scale(1.05);box-shadow:0 5px 15px rgba(74,144,226,.4)}
+    .btn:disabled{opacity:.5;cursor:not-allowed}
+    .progress-bar{width:100%;height:28px;background:rgba(255,255,255,.12);border-radius:15px;overflow:hidden;margin:1rem 0}
     .progress-fill{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));transition:width .5s;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-    .quiz-question{background:var(--card-bg);padding:2rem;border-radius:15px;margin:2rem 0}
-    .quiz-options{display:grid;gap:1rem;margin:1.5rem 0}
-    .quiz-option{padding:1rem;background:rgba(255,255,255,.05);border:2px solid transparent;border-radius:10px;cursor:pointer;transition:.3s;text-align:left}
-    .quiz-option:hover:not(.disabled){background:rgba(255,255,255,.1);border-color:var(--primary)}
-    .quiz-option.correct{background:rgba(126,211,33,.2);border-color:var(--success)}
-    .quiz-option.incorrect{background:rgba(208,2,27,.2);border-color:var(--error)}
-    .results{background:var(--card-bg);padding:2rem;border-radius:15px;text-align:center}
-    .score{font-size:3rem;font-weight:700;margin:1rem 0;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .quiz-question{background:var(--card);padding:2rem;border-radius:15px;margin:2rem 0}
+    .quiz-options{display:grid;gap:1rem;margin:1.2rem 0}
+    .quiz-option{padding:1rem;background:rgba(255,255,255,.06);border:2px solid transparent;border-radius:10px;cursor:pointer;transition:.25s;text-align:left}
+    .quiz-option:hover:not(.disabled){background:rgba(255,255,255,.12);border-color:var(--primary)}
+    .quiz-option.correct{background:rgba(126,211,33,.25);border-color:#7ED321}
+    .quiz-option.incorrect{background:rgba(208,2,27,.25);border-color:#D0021B}
+    .quiz-option.disabled{cursor:not-allowed}
+    .results{background:var(--card);padding:2rem;border-radius:15px;text-align:center}
+    .score{font-size:clamp(2rem,6vw,3rem);font-weight:700;margin:1rem 0;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .hidden{display:none !important}
     .mode-card:focus-visible,.card:focus-visible,.btn:focus-visible,.lesson-btn:focus-visible,.quiz-option:focus-visible{outline:2px solid var(--secondary);outline-offset:4px}
     @media (prefers-reduced-motion: reduce){.card,.btn,.mode-card,.lesson-btn{transition:none;transform:none}}
-    #iosInstallHint{position:fixed;left:1rem;right:1rem;bottom:calc(1rem + var(--safe-bottom));background:rgba(22,33,62,.95);border:1px solid rgba(255,255,255,.1);color:#fff;padding:.8rem 1rem;border-radius:12px;z-index:1000;text-align:center}
+    #iosInstallHint{position:fixed;left:1rem;right:1rem;bottom:calc(1rem + var(--safe-bottom));background:rgba(22,33,62,.95);border:1px solid rgba(255,255,255,.12);color:#fff;padding:.8rem 1rem;border-radius:12px;z-index:1000;text-align:center}
     #iosInstallHint.hidden{display:none}
   </style>
 </head>
@@ -56,7 +77,7 @@
     <div class="header-content">
       <h1>📚 Fremdwörter Trainer</h1>
       <div class="stats">
-        <div class="stat-item"><div class="stat-value" id="totalWords">0</div><div class="stat-label">Wörter</div></div>
+        <div class="stat-item"><div class="stat-value" id="totalWords">–</div><div class="stat-label">Wörter</div></div>
         <div class="stat-item"><div class="stat-value" id="learnedWords">0</div><div class="stat-label">Gelernt</div></div>
         <div class="stat-item"><div class="stat-value" id="streakCount">0</div><div class="stat-label">Serie</div></div>
       </div>
@@ -66,26 +87,30 @@
   <div class="container">
     <div id="mainMenu">
       <div class="mode-selector">
-        <div class="mode-card" id="modeLearn" role="button" tabindex="0"><h3>📖 Lernen</h3><p>Karteikarten in Lektionen zu je 10–15 Begriffen</p></div>
-        <div class="mode-card" id="modeQuiz" role="button" tabindex="0"><h3>✅ Lernkontrolle</h3><p>Teste dein Wissen mit 5 Fragen pro Lektion</p></div>
+        <div class="mode-card" id="modeLearn" role="button" tabindex="0"><h3>📖 Lernen</h3><p>Karteikarten in Lektionen zu je 12 Begriffen</p></div>
+        <div class="mode-card" id="modeQuiz" role="button" tabindex="0"><h3>✅ Lernkontrolle</h3><p>Teste dein Wissen mit 5 Fragen</p></div>
         <div class="mode-card" id="modeFinal" role="button" tabindex="0"><h3>🎯 Abschlusstest</h3><p>25 zufällige Fragen aus allen Themen</p></div>
-        <div class="mode-card" id="modeProgress" role="button" tabindex="0"><h3>📊 Fortschritt</h3><p>Sieh deinen Lernfortschritt und Statistiken</p></div>
+        <div class="mode-card" id="modeProgress" role="button" tabindex="0"><h3>📊 Fortschritt</h3><p>Sieh deinen Lernfortschritt</p></div>
       </div>
+      <p id="loading" style="margin-top:1rem;color:var(--muted)">Lade Wörterliste …</p>
     </div>
 
+    <!-- Lernmodus -->
     <div id="learningMode" class="hidden">
       <h2>Wähle eine Lektion:</h2>
       <div class="lesson-grid" id="lessonGrid"></div>
+
       <div id="cardView" class="hidden" aria-live="polite">
         <div class="card-container">
           <div class="card" id="flashcard" role="button" tabindex="0">
             <div class="card-face card-front">
               <div class="word" id="wordFront"></div>
-              <p style="margin-top:2rem;color:var(--text-secondary)">Tippe oder drücke Enter/Leertaste zum Umdrehen</p>
+              <p style="margin-top:2rem;color:var(--muted)">Tippe oder drücke Enter/Leertaste zum Umdrehen</p>
             </div>
             <div class="card-face card-back">
               <div class="definition" id="definition"></div>
               <div class="example" id="example"></div>
+              <div class="meta" id="meta"></div>
             </div>
           </div>
         </div>
@@ -99,12 +124,14 @@
       </div>
     </div>
 
+    <!-- Quiz-Modus -->
     <div id="quizMode" class="hidden">
       <h2 id="quizTitle">Quiz</h2>
       <div id="quizContent" aria-live="polite"></div>
       <div class="nav-buttons"><button class="btn" id="backToMenuBtn" type="button">Zurück zum Menü</button></div>
     </div>
 
+    <!-- Fortschritt -->
     <div id="progressView" class="hidden">
       <div class="results">
         <h2>📊 Dein Fortschritt</h2>
@@ -120,72 +147,190 @@
   <div id="iosInstallHint" class="hidden">Tippe auf <span>Teilen</span> → <span>„Zum Home-Bildschirm“</span>, um die App zu installieren.</div>
 
   <script>
-    // --- Datenbank (kleine Demo) ---
-    const wordsDatabase = [
-      {"Fremdwort":"Allegorie","Erläuterung":"Bildhafte Darstellung eines abstrakten Begriffs","Beispielsatz":"Die Figur mit Waage steht als Allegorie für Gerechtigkeit.","Thema":"Sprache & Literatur"},
-      {"Fremdwort":"Alliteration","Erläuterung":"Gleicher Anfangslaut bei benachbarten Wörtern","Beispielsatz":`„Milch macht müde Männer munter“ ist eine Alliteration.`, "Thema":"Sprache & Literatur"},
-      {"Fremdwort":"Metapher","Erläuterung":"Übertragener, bildhafter Ausdruck","Beispielsatz":`„Fels in der Brandung“ ist eine Metapher.`, "Thema":"Sprache & Literatur"},
-      {"Fremdwort":"Demokratie","Erläuterung":"Staatsform mit Mitbestimmung der Bürger","Beispielsatz":"In der Demokratie wählen Bürger ihre Vertreter.","Thema":"Politik & Gesellschaft"},
-      {"Fremdwort":"Diktatur","Erläuterung":"Herrschaft ohne freie Wahlen","Beispielsatz":"In der Diktatur ist Kritik gefährlich.","Thema":"Politik & Gesellschaft"},
-      {"Fremdwort":"Inflation","Erläuterung":"Allgemeiner Preisanstieg","Beispielsatz":"Durch Inflation wird der Einkauf teurer.","Thema":"Wirtschaft"},
-      {"Fremdwort":"Rezession","Erläuterung":"Wirtschaftsabschwung","Beispielsatz":"In der Rezession steigt die Arbeitslosigkeit.","Thema":"Wirtschaft"},
-      {"Fremdwort":"Photosynthese","Erläuterung":"Aufbau von Zucker aus CO₂ und Wasser mit Licht","Beispielsatz":"Durch Photosynthese entsteht Sauerstoff.","Thema":"Naturwissenschaften"}
-    ];
+    /* ---------- Konfiguration ---------- */
+    const LESSON_SIZE = 12;
 
-    // --- State & Helpers ---
+    /* ---------- Daten laden (JSON) ---------- */
+    let wordsDatabase = [];
+    let dataReady = false;
+
+    async function loadWords(){
+      try{
+        const res = await fetch('fremdwoerter_klasse11_komplett.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('JSON nicht gefunden');
+        wordsDatabase = await res.json();
+      }catch(e){
+        console.warn('Wörterliste nicht gefunden – nutze Mini-Fallback.', e);
+        wordsDatabase = [
+          {"Fremdwort":"Allegorie","Erläuterung":"Bildhafte Darstellung eines abstrakten Begriffs","Beispielsatz":"Die Figur mit Waage steht als Allegorie für Gerechtigkeit.","Thema":"Sprache & Literatur"},
+          {"Fremdwort":"Metapher","Erläuterung":"Übertragener, bildhafter Ausdruck","Beispielsatz":"„Fels in der Brandung“ ist eine Metapher.","Thema":"Sprache & Literatur"}
+        ];
+        document.getElementById('loading').textContent = 'Hinweis: Bitte die Datei fremdwoerter_klasse11_komplett.json neben index.html anlegen.';
+      }
+      dataReady = true;
+      document.getElementById('loading').classList.add('hidden');
+      updateStats();
+    }
+
+    /* ---------- State & Helpers ---------- */
     let currentLesson=[], currentCardIndex=0, currentQuiz=[], currentQuizIndex=0, score=0;
     let learned=JSON.parse(localStorage.getItem('learned')||'[]');
     let completedLessons=JSON.parse(localStorage.getItem('completedLessons')||'[]');
     let currentLessonIndex=null;
+
     const $=s=>document.querySelector(s);
     const el=(t,p={},...c)=>{const e=document.createElement(t);Object.assign(e,p);c.forEach(x=>e.appendChild(typeof x==='string'?document.createTextNode(x):x));return e;}
     const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 
     function setView(ids=[]){['mainMenu','learningMode','quizMode','progressView'].forEach(id=>document.getElementById(id).classList.toggle('hidden',!ids.includes(id)));}
+
     function updateStats(){
-      $('#totalWords').textContent=wordsDatabase.length;
-      $('#learnedWords').textContent=learned.length;
+      $('#totalWords').textContent = dataReady ? wordsDatabase.length : '–';
+      $('#learnedWords').textContent = learned.length;
       const today=new Date().toDateString(); const last=localStorage.getItem('lastSessionDate');
       let streak=Number(localStorage.getItem('streak')||'0');
       if(last!==today){streak=last?streak+1:1;localStorage.setItem('lastSessionDate',today);localStorage.setItem('streak',String(streak));}
       $('#streakCount').textContent=String(streak);
     }
 
-    function startLearning(){ setView(['learningMode']); document.getElementById('cardView').classList.remove('hidden'); currentLesson=wordsDatabase.slice(0,Math.min(12,wordsDatabase.length)); currentCardIndex=0; showCard(); }
-    function showCard(){ const w=currentLesson[currentCardIndex]; $('#wordFront').textContent=w.Fremdwort; $('#definition').textContent=w.Erläuterung; $('#example').textContent=w.Beispielsatz; $('#flashcard').classList.remove('flipped'); updateProgress(); updateNavButtons(); }
-    function flipCard(){ $('#flashcard').classList.toggle('flipped'); }
+    /* ---------- Lernen: Lektionenliste ---------- */
+    function startLearning(){
+      if(!dataReady){ alert('Wörterliste lädt noch …'); return; }
+      setView(['learningMode']);
+      document.getElementById('cardView').classList.add('hidden');
+      generateLessons();
+    }
+
+    function generateLessons(){
+      const grid = document.getElementById('lessonGrid');
+      grid.textContent = '';
+
+      const lessonCount = Math.ceil(wordsDatabase.length / LESSON_SIZE);
+      for (let i = 0; i < lessonCount; i++){
+        const start = i * LESSON_SIZE;
+        const end   = Math.min(start + LESSON_SIZE, wordsDatabase.length);
+        const btn   = document.createElement('button');
+
+        btn.className = 'lesson-btn';
+        btn.type = 'button';
+        if (completedLessons.includes(i)) btn.classList.add('completed');
+        btn.textContent = `Lektion ${i+1} (${end - start})`;
+        btn.addEventListener('click', () => startLesson(i));
+        grid.appendChild(btn);
+      }
+    }
+
+    function startLesson(lessonIndex){
+      const start = lessonIndex * LESSON_SIZE;
+      const end   = Math.min(start + LESSON_SIZE, wordsDatabase.length);
+
+      currentLesson      = wordsDatabase.slice(start, end);
+      currentCardIndex   = 0;
+      currentLessonIndex = lessonIndex;
+
+      document.getElementById('cardView').classList.remove('hidden');
+      showCard();
+    }
+
+    function showCard(){
+      const w=currentLesson[currentCardIndex];
+      $('#wordFront').textContent=w?.Fremdwort || '';
+      $('#definition').textContent=w?.Erläuterung || '';
+      $('#example').textContent=w?.Beispielsatz || '';
+      const bits=[];
+      if(w?.Synonyme) bits.push(`Synonyme: ${w.Synonyme}`);
+      if(w?.Antonyme && w.Antonyme!=='–') bits.push(`Antonyme: ${w.Antonyme}`);
+      if(w?.Thema) bits.push(`Thema: ${w.Thema}`);
+      $('#meta').textContent = bits.join(' · ');
+      $('#flashcard').classList.remove('flipped');
+      updateProgress(); updateNavButtons();
+    }
+
     function nextCard(){ if(currentCardIndex<currentLesson.length-1){ currentCardIndex++; showCard(); } }
     function previousCard(){ if(currentCardIndex>0){ currentCardIndex--; showCard(); } }
     function markLearned(){
-      const word=currentLesson[currentCardIndex].Fremdwort;
-      if(!learned.includes(word)){ learned.push(word); localStorage.setItem('learned',JSON.stringify(learned)); updateStats(); }
-      if(currentCardIndex<currentLesson.length-1){ nextCard(); } else { alert('Lektion abgeschlossen! 🎉'); setView(['mainMenu']); }
+      const word=currentLesson[currentCardIndex]?.Fremdwort;
+      if(word && !learned.includes(word)){ learned.push(word); localStorage.setItem('learned',JSON.stringify(learned)); updateStats(); }
+      if(currentCardIndex<currentLesson.length-1){ nextCard(); } else {
+        if (!completedLessons.includes(currentLessonIndex)) {
+          completedLessons.push(currentLessonIndex);
+          localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+        }
+        alert(`Lektion ${currentLessonIndex + 1} abgeschlossen! 🎉`);
+        backToLessons();
+      }
     }
-    function updateProgress(){ const p=Math.round((currentCardIndex+1)/currentLesson.length*100); const bar=$('#progressBar'); bar.style.width=p+'%'; bar.textContent=p+'%'; }
+    function backToLessons(){ document.getElementById('cardView').classList.add('hidden'); generateLessons(); }
+    function updateProgress(){ const p=Math.round((currentCardIndex+1)/currentLesson.length*100)||0; const bar=$('#progressBar'); bar.style.width=p+'%'; bar.textContent=p+'%'; }
     function updateNavButtons(){ $('#prevBtn').disabled=currentCardIndex===0; $('#nextBtn').disabled=currentCardIndex===currentLesson.length-1; }
 
-    // Quiz (kurz)
-    function startQuiz(){ setView(['quizMode']); $('#quizTitle').textContent='Quiz'; currentQuiz=generateQuizQuestions(5); currentQuizIndex=0; score=0; showQuizQuestion(); }
-    function generateQuizQuestions(n){ const pool=shuffle([...wordsDatabase]).slice(0,Math.min(n,wordsDatabase.length)); return pool.map(w=>{const d=shuffle(wordsDatabase.filter(x=>x!==w)).slice(0,3).map(x=>x.Erläuterung); const options=shuffle([w.Erläuterung,...d]); return {word:w,options,correctIndex:options.indexOf(w.Erläuterung)}});}
-    function showQuizQuestion(){ const c=$('#quizContent'); c.textContent=''; if(currentQuizIndex>=currentQuiz.length) return showQuizResults(); const q=currentQuiz[currentQuizIndex];
-      const box=el('div',{className:'quiz-question'}); box.appendChild(el('h3',{},`Frage ${currentQuizIndex+1} von ${currentQuiz.length}`));
+    /* ---------- Quiz ---------- */
+    function startQuiz(){
+      if(!dataReady){ alert('Wörterliste lädt noch …'); return; }
+      setView(['quizMode']); $('#quizTitle').textContent='Quiz';
+      currentQuiz=generateQuizQuestions(5); currentQuizIndex=0; score=0; showQuizQuestion();
+    }
+    function startFinalTest(){
+      if(!dataReady){ alert('Wörterliste lädt noch …'); return; }
+      setView(['quizMode']); $('#quizTitle').textContent='Abschlusstest';
+      currentQuiz=generateQuizQuestions(Math.min(25, wordsDatabase.length)); currentQuizIndex=0; score=0; showQuizQuestion();
+    }
+    function generateQuizQuestions(n){
+      const pool=shuffle([...wordsDatabase]).slice(0, Math.min(n, wordsDatabase.length));
+      return pool.map(word=>{
+        const distractors=shuffle(wordsDatabase.filter(w=>w.Fremdwort!==word.Fremdwort)).slice(0,3).map(w=>w.Erläuterung);
+        const options=shuffle([word.Erläuterung, ...distractors]);
+        return { word, options, correctIndex: options.indexOf(word.Erläuterung) };
+      });
+    }
+    function showQuizQuestion(){
+      const c=$('#quizContent'); c.textContent='';
+      if(currentQuizIndex>=currentQuiz.length) return showQuizResults();
+      const q=currentQuiz[currentQuizIndex];
+      const box=el('div',{className:'quiz-question'});
+      box.appendChild(el('h3',{},`Frage ${currentQuizIndex+1} von ${currentQuiz.length}`));
       const p=el('p',{style:'font-size:1.5rem;margin:1rem 0;'}); p.append('Was bedeutet: ',el('strong',{},q.word.Fremdwort),'?'); box.appendChild(p);
-      const wrap=el('div',{className:'quiz-options'}); q.options.forEach((t,i)=>{const b=el('button',{className:'quiz-option',type:'button'},t); b.onclick=()=>checkAnswer(i); wrap.appendChild(b);}); box.appendChild(wrap); c.appendChild(box);}
-    function checkAnswer(sel){ const q=currentQuiz[currentQuizIndex]; document.querySelectorAll('.quiz-option').forEach((o,i)=>{o.classList.add('disabled'); if(i===q.correctIndex) o.classList.add('correct'); if(i===sel&&sel!==q.correctIndex) o.classList.add('incorrect');}); if(sel===q.correctIndex) score++; setTimeout(()=>{currentQuizIndex++;showQuizQuestion();},1200); }
-    function showQuizResults(){ const c=$('#quizContent'); c.textContent=''; const w=el('div',{className:'results'}); w.append(el('h2',{},'Quiz abgeschlossen!'),el('div',{className:'score'},`${score}/${currentQuiz.length}`),el('p',{},`Du hast ${Math.round(score/currentQuiz.length*100)}% richtig!`)); c.appendChild(w); }
+      const wrap=el('div',{className:'quiz-options'});
+      q.options.forEach((t,i)=>{ const b=el('button',{className:'quiz-option',type:'button'},t); b.onclick=()=>checkAnswer(i); wrap.appendChild(b); });
+      box.appendChild(wrap); c.appendChild(box);
+    }
+    function checkAnswer(sel){
+      const q=currentQuiz[currentQuizIndex]; document.querySelectorAll('.quiz-option').forEach((o,i)=>{ o.classList.add('disabled'); if(i===q.correctIndex) o.classList.add('correct'); if(i===sel && sel!==q.correctIndex) o.classList.add('incorrect'); });
+      if(sel===q.correctIndex) score++; setTimeout(()=>{ currentQuizIndex++; showQuizQuestion(); }, 1200);
+    }
+    function showQuizResults(){
+      const c=$('#quizContent'); c.textContent='';
+      const w=el('div',{className:'results'}); w.append(el('h2',{},'Quiz abgeschlossen!'), el('div',{className:'score'},`${score}/${currentQuiz.length}`), el('p',{},`Du hast ${Math.round(score/currentQuiz.length*100)}% richtig!`));
+      c.appendChild(w);
+    }
 
-    // iOS-Hinweis + Service Worker
-    function maybeShowIosInstallHint(){ const isiOS=/iphone|ipad|ipod/i.test(navigator.userAgent); const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone; if(isiOS && !standalone) document.getElementById('iosInstallHint').classList.remove('hidden'); }
-    function registerSW(){ if('serviceWorker' in navigator){ window.addEventListener('load', ()=> navigator.serviceWorker.register('sw.js').catch(console.error)); } }
+    /* ---------- Kontrast-Guard (WCAG) ---------- */
+    function relLum([r,g,b]){ const srgb=[r,g,b].map(v=>{v/=255; return v<=0.03928? v/12.92 : Math.pow((v+0.055)/1.055,2.4);}); return 0.2126*srgb[0]+0.7152*srgb[1]+0.0722*srgb[2]; }
+    function hexToRgb(hex){ const h=hex.replace('#',''); return [parseInt(h.substr(0,2),16),parseInt(h.substr(2,2),16),parseInt(h.substr(4,2),16)]; }
+    function contrastRatio(fgHex,bgHex){ const L1=relLum(hexToRgb(fgHex)), L2=relLum(hexToRgb(bgHex)); const lighter=Math.max(L1,L2), darker=Math.min(L1,L2); return (lighter+0.05)/(darker+0.05); }
+    function applyContrastGuard(){
+      const cs = getComputedStyle(document.documentElement);
+      const bg = cs.getPropertyValue('--bg').trim();
+      const text = cs.getPropertyValue('--text').trim();
+      if(!bg.startsWith('#')||!text.startsWith('#')) return;
+      const ratio = contrastRatio(text, bg);
+      if (ratio < 4.5) document.documentElement.classList.add('high-contrast');
+      else document.documentElement.classList.remove('high-contrast');
+    }
 
-    // Events
-    window.addEventListener('DOMContentLoaded', ()=>{
-      updateStats(); maybeShowIosInstallHint(); registerSW();
+    /* ---------- iOS-Hinweis + SW + UI ---------- */
+    function maybeShowIosInstallHint(){
+      const isiOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
+      const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+      if(isiOS && !standalone) document.getElementById('iosInstallHint').classList.remove('hidden');
+    }
+    function registerSW(){ if('serviceWorker' in navigator){ window.addEventListener('load',()=> navigator.serviceWorker.register('sw.js').catch(console.error)); } }
+    function wireUI(){
       document.getElementById('modeLearn').onclick=startLearning;
       document.getElementById('modeQuiz').onclick=startQuiz;
-      document.getElementById('modeFinal').onclick=()=>{ setView(['quizMode']); document.getElementById('quizTitle').textContent='Abschlusstest'; currentQuiz=generateQuizQuestions(Math.min(25,wordsDatabase.length)); currentQuizIndex=0; score=0; showQuizQuestion(); };
-      document.getElementById('modeProgress').onclick=()=>{ setView(['progressView']); const d=document.getElementById('progressDetails'); const pct=Math.round((learned.length/wordsDatabase.length)*100); d.innerHTML=`<div class="score">${pct}%</div><p>Du hast ${learned.length} von ${wordsDatabase.length} Wörtern gelernt!</p><div class="progress-bar" style="margin:2rem auto;max-width:400px;"><div class="progress-fill" style="width:${pct}%">${pct}%</div></div>`; };
-      document.getElementById('flashcard').onclick=flipCard;
+      document.getElementById('modeFinal').onclick=startFinalTest;
+      document.getElementById('modeProgress').onclick=()=>{ setView(['progressView']); const d=document.getElementById('progressDetails'); const total=wordsDatabase.length||1; const pct=Math.round((learned.length/total)*100); d.innerHTML=`<div class="score">${pct}%</div><p>Du hast ${learned.length} von ${total} Wörtern gelernt!</p><div class="progress-bar" style="margin:2rem auto;max-width:400px;"><div class="progress-fill" style="width:${pct}%">${pct}%</div></div>`; };
+      document.getElementById('flashcard').onclick=()=>document.getElementById('flashcard').classList.toggle('flipped');
       document.getElementById('prevBtn').onclick=previousCard;
       document.getElementById('nextBtn').onclick=nextCard;
       document.getElementById('markLearnedBtn').onclick=markLearned;
@@ -193,6 +338,14 @@
       document.getElementById('backToMenuBtn').onclick=()=>setView(['mainMenu']);
       document.getElementById('progressBackBtn').onclick=()=>setView(['mainMenu']);
       document.getElementById('resetProgressBtn').onclick=()=>{ if(confirm('Fortschritt wirklich zurücksetzen?')){ localStorage.clear(); learned=[]; completedLessons=[]; updateStats(); setView(['mainMenu']); } };
+    }
+
+    /* ---------- Boot ---------- */
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', applyContrastGuard);
+    window.addEventListener('DOMContentLoaded', ()=>{
+      loadWords();
+      updateStats(); wireUI(); maybeShowIosInstallHint(); registerSW();
+      applyContrastGuard();
     });
   </script>
 </body>
