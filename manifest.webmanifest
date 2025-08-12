@@ -1,0 +1,9 @@
+{
+  "name": "Fremdwörter Trainer – Klasse 11",
+  "short_name": "Fremdwörter 11",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#4A90E2",
+  "background_color": "#0f1123"
+}
